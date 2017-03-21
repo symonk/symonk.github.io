@@ -21,16 +21,22 @@ List all columns with every record in Employees:
 	
     Select * FROM Employees 
     
+---
+    
 ### View certain columns from a particular database table
 Lists all records in the Employees table, however results will only return the EmployeeID and FirstName columns:
 
 	Select EmployeeID, Employee FirstName FROM Employees 
+    
+---
     
 ### Utilising the WHERE clause to filter out unwanted data
 Lists every record from the Employees table (displaying their EmployeeID and FirstName column data only, However - Only records where the Firstname is "Simon" will be displayed to the user:
 
 	Select EmployeeID, Employee FirstName FROM Employees WHERE FirstName = 
 	'Simon' 
+    
+---
     
 ### WHERE clause opposition - where something is not
 
