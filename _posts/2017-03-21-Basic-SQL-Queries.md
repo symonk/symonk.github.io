@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Basic SQL Queries '
-subtitle: SQL Server - by Simon Kerr
+title: 'Basic SQL Querying and functions'
+subtitle: SQL Data Definition/Manipulation Language
 bigimg: /img/path.jpg
 published: true
 ---
