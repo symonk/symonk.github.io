@@ -21,7 +21,7 @@ White box testing is the opposite, testing when we know the internals of the sys
 
 - Paths - Testing to ensure we hit every path through the entire system, ensuring we have traversed through all possible paths atleast once. This does encompass some branch testing as well.
 
-Note: Statement coverage tends to only cover the true side, so lets explain this a little better with some examples.
+**Note:** Statement coverage tends to only cover the true side, so lets explain this a little better with some examples.
 
     Variable num1 & num2
     num3 = num1 + num2
