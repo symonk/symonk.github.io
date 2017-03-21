@@ -1,7 +1,6 @@
 ---
 layout: post
-title: 'Basic SQL Querying and functions'
-subtitle: SQL Data Definition/Manipulation Language
+title: 'Basic SQL Querying'
 bigimg: /img/path.jpg
 published: true
 ---
