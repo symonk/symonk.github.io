@@ -81,7 +81,9 @@ Integration testing is where we bring multiple pieces together, think for exampl
 When navigating between these modules, say via various links, we would be conducting integration testing, we are verifying functionality between modules works as intended.  So a test case may be similar to:
 
 **Objective:** Check the interface link between the Login and Messaging module
+
 **Description:** Enter valid login,  Navigate to users Messaging
+
 **Expected Result:** User is redirected successfully to the inbox
 
 Integration testing becomes especially prevalent when testing API's that are pulling data from other/third party sources and displaying it accurately in your application.  For example my application may have a users balance (which is coming from a third party) so we have to call their API in order to retrieveBalanceForUser().  Here we are verifying our system is retrieving and displaying the balance it is receiving from another system successfully.  Integration testing can also be great at identifying any localisation or environment issues.
