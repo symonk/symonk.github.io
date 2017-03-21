@@ -16,31 +16,31 @@ This post is a short article outlining some simple uses of the SQL Queries.  SQL
 In order to execute queries we need to connect to our database instance using SSMS (SQL Server Management Studio).  We can Launch the application and depending on how the instance was setup initially, connect via windows authentication or SQL Server Authentication, providing a Login/Password.  note: Default super admin username will be "sa" - Tho it is highly advised to disable this account for security/permissions reasons, some ISO compliance and other certification actually requires it.
 
 
-# View all records in a particular database table
+### View all records in a particular database table
 
 	Select * FROM Employees (Lists all columns with every record in Employees)
     
-# View certain columns from a particular database table
+### View certain columns from a particular database table
 
 	Select EmployeeID, Employee FirstName FROM Employees (Lists all records in
 	the Employees table, however results will only return the EmployeeID and 
 	FirstName columns
     
-# Utilising the WHERE clause to filter out unwanted data
+### Utilising the WHERE clause to filter out unwanted data
 
 	Select EmployeeID, Employee FirstName FROM Employees WHERE FirstName = 
 	'Simon' (Lists every record from the Employees table (displaying their
 	EmployeeID and FirstName column data only, However - Only records where the
 	Firstname is "Simon" will be displayed to the user)
     
-# WHERE clause opposition - where something is not
+### WHERE clause opposition - where something is not
 
 	Select EmployeeID, Employee FirstName FROM Employees WHERE FirstName <> 
 	'Simon' (Lists every record from the Employees table (displaying their
 	EmployeeID and FirstName column data only, However - Only records where the
 	Firstname is not "Simon" will be displayed to the user.
     
-# BEFORE or AFTER a particular Date
+### BEFORE or AFTER a particular Date
 
 	SELECT EmployeeID, FirstName FROM Employees WHERE HireDate >= '1-June-2016'
 	(Lists all employees who where hired After this particular date.  We can also
@@ -48,7 +48,7 @@ In order to execute queries we need to connect to our database instance using SS
     this particular date.  Pay attention to the select columns, we will only be 
     getting back EmployeeID and FirstName columns (comma seperated).
     
-# Multiple WHERE clauses using the AND operator, BETWEEN operator too!
+### Multiple WHERE clauses using the AND operator, BETWEEN operator too!
 
 	SELECT EmployeeID, FirstName FROM Employees WHERE (HireDate >= '1-July-2016')
     AND (HireDate <= '10-July-2016') As you can imagine, we will return every 
@@ -56,7 +56,7 @@ In order to execute queries we need to connect to our database instance using SS
     and First name columns.  However this can be rewritten using a fancier 
     BETWEEN operator.  WHERE HireDate BETWEEN '1-JULY-2016' AND '10-July-2016'
     
-# Multiple Choice WHERE clause : IN and OR operators
+### Multiple Choice WHERE clause : IN and OR operators
 
 	Previous examples are ok for short examples, however what if we need to find
     employees of certain ages? 18, 25, 31 ?  Here we utilise the IN operator, we 
@@ -64,14 +64,14 @@ In order to execute queries we need to connect to our database instance using SS
     SELECT * FROM Employees WHERE Age = 18 OR 20  -> OR Operator
     SELECT * FROM Employees WHERE Age IN (18, 25, 31) -> IN Operator
     
-# Reversing the IN Operator to find results NOT IN
+### Reversing the IN Operator to find results NOT IN
 
 	We can also use the NOT IN to reverse the IN operator, similar to how we 
     reversed = with <> previously.  Here is an example of all employees who's age
     is NOT 18, 25, 31 or 40
     SELECT * FROM Employees WHERE Age NOT IN (18,25,31,40) -> NOT IN Operator
     
-# The Powerful LIKE operator and its magnitude of uses
+### The Powerful LIKE operator and its magnitude of uses
 
     The LIKE operator uses pattern matching with wildcard chararcters.  these 
     wildcards are listed below:
@@ -97,7 +97,7 @@ In order to execute queries we need to connect to our database instance using SS
     SELECT * FROM Employee WHERE (FirstName NOT LIKE '%mon%') AND (Surname NOT 
     LIKE '%Ker'
     
-# Get some ORDER in your results
+### Get some ORDER in your results
 
 	Order Ascending -> 
 	SELECT * FROM Employees WHERE Firstname <> 'Simon'ORDER BY FirstName ASC
@@ -108,17 +108,17 @@ In order to execute queries we need to connect to our database instance using SS
 	Above we simply find ALL employees whos firstname IS NOT Simon and order the
 	results by Firstname Descending
     
-# Counting how many records exist in the table
+### Counting how many records exist in the table
 
 	SELECT COUNT(*) FROM Employee (Returns a numerical value for every record in
 	the table
     
-# INSERT new rows into the table
+### INSERT new rows into the table
 
 	INSERT INTO Employees (Firstname, Surname, Role) VALUES ('Simon', 'Kerr', 
 	'QA Engineer')
 	
-# UPDATE and SET Data (Used to update existing records)
+### UPDATE and SET Data (Used to update existing records)
 
 	UPDATE EMPLOYEES SET FirstName = 'Simon', Surname = 'Kerr' WHERE EmployeeID
     = 250 (Update a record with EmployeeID of 250 and set the First and Surname.
@@ -127,7 +127,7 @@ In order to execute queries we need to connect to our database instance using SS
     record in the table, its always advised to take backups when tinkering with
     the data outside of READ ONLY scenarios.
     
-# DELETE records from the table
+### DELETE records from the table
 
 	DELETE FROM EMPLOYEES WHERE EmployeeID = 250 
     DELETE FROM EMPLOYEES WHERE Country = 'Northern Ireland'
@@ -136,7 +136,7 @@ In order to execute queries we need to connect to our database instance using SS
 
     DELETE * FROM Employees (Delete every record, tread carefully!)
     
-# Selecting a number of records
+### Selecting a number of records
 
     SELECT TOP 1000 EmployeeID FROM Employee
     Return the top 1000 records showing only EmployeeID only
@@ -144,7 +144,7 @@ In order to execute queries we need to connect to our database instance using SS
     SELECT TOP 5 PERCENT EmployeeID, FirstName FROM Employee
     Return the top 5% records showing EmployeeID and FirstName
     
-# Min() and Maximum() Functions
+### Min() and Maximum() Functions
 
     SELECT MIN(Price) AS smallestPrice FROM Items
     Find the cheapest product in the Items table
