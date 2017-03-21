@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Different Types of Testing'
-bigimg: /img/banner3.jpg
+bigimg: /img/path.jpg
 published: true
 ---
 
