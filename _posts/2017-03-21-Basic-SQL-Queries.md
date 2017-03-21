@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic SQL Queries all QA engineers should know
+title: 'Basic SQL Queries '
 subtitle: SQL Server - by Simon Kerr
 bigimg: /img/path.jpg
 published: true
