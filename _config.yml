@@ -26,6 +26,7 @@ navbar-links:
   Articles:
     - SQL Querying: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
     - REST APIs: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
+    - Testing Types: "https://symonk.github.io/2017-03-21-Types-of-Testing/"
   Simon's Github: "http://www.github.com/symonk"
 
 # Image to show in the navigation bar - image must be a square (width = height)
