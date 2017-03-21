@@ -8,11 +8,11 @@ Some examples of these statements are:
 - CREATE: Create Objects in the database.
 - ALTER: Modify the structure of the database.
 - DROP - Remove/Delete objects from the database.
-- TRUNCATE - Remove all records from a table.
+- TRUNCATE - Remove all records from a table. [Keeps table structure in-tact for future use]
 - COMMENT - Add comments to the data dictionary.
 - RENAME - Rename an object in the database.
     
-**note: ** Truncate Vs. Drop - Both Drop & Truncate *cannot* be rolled back as they are DDL, Delete is DDM and can be rolled back.
+**note:** Truncate Vs. Drop - Both Drop & Truncate *cannot* be rolled back as they are DDL, Delete is DDM and can be rolled back.
 
 Database Manipulation Language is essentially the collective statements that are used to manage data within schema objects. 
 Some examples of these statements are:
