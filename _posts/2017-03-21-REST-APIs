@@ -1,0 +1,36 @@
+---
+layout: post
+title: ''
+published: false
+---
+### What is an API?
+
+# What is an API?
+An API is short for Application Programming Interface.  This is essentially a way of sharing application data over the internet (HTTP API). Using a magnitude of API's we can build a hybrid application calling information from various sources e.g twitter, google, facebook, youtube etc all under one roof.  They are also extremely useful for integrating with third parties.  For example, if we have an application that allows you to Create, Edit, Delete and Update products, we could create a HTTP API with the following:
+
+http://example.com/view_products
+
+http://example.com/create_new_product?productName=example
+
+http://example.com/update_product?id=11&name=example
+
+http://example.com/delete_product?id=11
+
+Not so sure I like the above approach..
+
+---
+
+### What is REST?
+REST stands for REpresentational State Transfer (RE-S-T).  This is a standard way of creating HTTP API's which typically consist of the following actions: View, Create, Edit and Delete which can be mapped directly to HTTP verbs: GET, POST, PUT, DELETE.  These are outlined below:
+
+GET: Used to Read/Retrieve a representation of a resource.  Get returns a representation in XML/JSON and typically a response code of 200.
+
+POST: Used to typically CREATE new resources.  POST typically returns a response code of 201. POST is non-idempotent, care is advised.
+
+PUT: Used to typically UPDATE existing resources.  PUT is idempotent. PUT typically returns a response code of 200 (or 204 if empty body)
+
+DELETE: Used to typically DELETE existing resources.  DELETE typically returns a 200 OK response code or 404 not found if resource cannot be found.
+
+Following on from the previous example then, If we wanted to view ALL products, our URL would look like this:
+
+	**GET** Http://www.example.com/products
