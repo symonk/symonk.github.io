@@ -19,9 +19,7 @@ In order to execute queries we need to connect to our database instance using SS
 ### View all records in a particular database table
 List all columns with every record in Employees:
 
-	{% highlight SQL %}
     Select * FROM Employees
-    {% highlight SQL %}
     
 ---
     
