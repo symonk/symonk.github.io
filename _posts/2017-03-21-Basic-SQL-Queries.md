@@ -19,7 +19,9 @@ In order to execute queries we need to connect to our database instance using SS
 ### View all records in a particular database table
 List all columns with every record in Employees:
 	
-    Select * FROM Employees 
+    ```SQL 
+    Select * FROM Employees
+    ``` 
     
 ---
     
@@ -157,4 +159,3 @@ Find the cheapest product in the Items table
 Find the dearest product in the Products table
 
     SELECT MAX(Price) AS smallestPrice FROM Products
-    
