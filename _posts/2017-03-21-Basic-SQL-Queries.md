@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Basic SQL Querying'
-bigimg: /img/path.jpg
+bigimg: /img/banner1.jpg
 published: true
 ---
 
