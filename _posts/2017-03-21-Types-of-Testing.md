@@ -7,10 +7,12 @@ published: true
 
 Whether you're beginning your testing career or an elite testing veteran, it's important to keep on track of the most common types and terminology, particularly useful for an interview (probably more so than actually on the job).  This post will outline what I deem to be some of the most current ones to date.  Read more…
 
-Black box testing:
+**Black box testing:**
+
 Black box testing is testing the software when we have no idea of the internal structure, we have no idea what the source code is like or how it really works, we also have no idea or access to the database(s). We look at the software in question from a customers perspective completely, for example a web application we will strictly look at the GUI and use it how a customer or end user will be using it.
 
-White box testing:
+**White box testing:**
+
 White box testing is the opposite, testing when we know the internals of the system.  We are aware of the source code and database structures.  Here we can path accordingly and account for more in depth scenarios, here our tests are based on the coverage of the code, branching / pathing and conditions.  White box testing requires more programming capability from the tester than black box, we will ensure to try and cover:
 
 - Statements - Methods etc, ensuring we can hit as much if not all of the methods applicable, ensuring they will work as expected.
