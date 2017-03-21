@@ -39,11 +39,12 @@ Lists every record from the Employees table (displaying their EmployeeID and Fir
 ---
     
 ### WHERE clause opposition - where something is not
+Lists every record from the Employees table (displaying their EmployeeID and FirstName column data only, However - Only records where the Firstname is not "Simon" will be displayed to the user:
 
 	Select EmployeeID, Employee FirstName FROM Employees WHERE FirstName <> 
-	'Simon' (Lists every record from the Employees table (displaying their
-	EmployeeID and FirstName column data only, However - Only records where the
-	Firstname is not "Simon" will be displayed to the user.
+	'Simon' 
+    
+---
     
 ### BEFORE or AFTER a particular Date
 
