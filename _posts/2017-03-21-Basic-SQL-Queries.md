@@ -17,21 +17,20 @@ In order to execute queries we need to connect to our database instance using SS
 
 
 ### View all records in a particular database table
-
-	Select * FROM Employees (Lists all columns with every record in Employees)
+List all columns with every record in Employees:
+	
+    Select * FROM Employees 
     
 ### View certain columns from a particular database table
+Lists all records in the Employees table, however results will only return the EmployeeID and FirstName columns:
 
-	Select EmployeeID, Employee FirstName FROM Employees (Lists all records in
-	the Employees table, however results will only return the EmployeeID and 
-	FirstName columns
+	Select EmployeeID, Employee FirstName FROM Employees 
     
 ### Utilising the WHERE clause to filter out unwanted data
+Lists every record from the Employees table (displaying their EmployeeID and FirstName column data only, However - Only records where the Firstname is "Simon" will be displayed to the user:
 
 	Select EmployeeID, Employee FirstName FROM Employees WHERE FirstName = 
-	'Simon' (Lists every record from the Employees table (displaying their
-	EmployeeID and FirstName column data only, However - Only records where the
-	Firstname is "Simon" will be displayed to the user)
+	'Simon' 
     
 ### WHERE clause opposition - where something is not
 
