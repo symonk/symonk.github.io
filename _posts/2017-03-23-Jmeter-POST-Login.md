@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
-title: 'HOW TO: Record HTTP requests and login via JMETER'
+title: 'HOW TO: Record HTTP Requests and Login with JMETER'
+bigimg: /img/path.jpg
+published: true
 ---
 
 
