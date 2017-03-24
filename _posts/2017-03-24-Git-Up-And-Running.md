@@ -5,6 +5,7 @@ bigimg: /img/path.jpg
 published: true
 ---
 
+
 ### What do we need to start?
 
 Download Git
@@ -120,8 +121,4 @@ All files which have changed:
 To find more, use the log help:
 
    git log --help
-   
-
-
-
-
+  
