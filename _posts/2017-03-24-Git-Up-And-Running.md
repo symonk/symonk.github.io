@@ -10,9 +10,14 @@ published: true
 
 Download Git
 
-windows: https://git-for-windows.github.io/
-Linux: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-OSX/MAC: https://git-scm.com/download/mac
+windows:  
+https://git-for-windows.github.io/
+
+Linux: 
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+OSX/MAC: 
+https://git-scm.com/download/mac
 
 Git typically consists of three parts, 
 
@@ -121,4 +126,3 @@ All files which have changed:
 To find more, use the log help:
 
    git log --help
-  
