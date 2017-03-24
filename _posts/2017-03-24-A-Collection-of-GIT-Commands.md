@@ -7,7 +7,7 @@ published: true
 
 ### What do we need to start?
 
-We should probably download git..
+Download Git
 
 windows: https://git-for-windows.github.io/
 Linux: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
