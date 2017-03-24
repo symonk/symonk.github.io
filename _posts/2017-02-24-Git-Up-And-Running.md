@@ -5,6 +5,7 @@ bigimg: /img/path.jpg
 published: true
 ---
 
+In this post we will be going over some of the basics of git and some brief insight into some of the commands and generally how they work.  By the end you will have a good grasp on the most common used git commands and should be pretty fluent in using git BASH
 
 ### What do we need to start?
 
