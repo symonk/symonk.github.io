@@ -10,14 +10,12 @@ published: true
 
 Download Git
 
-windows:  
-https://git-for-windows.github.io/
+[Windows](https://git-for-windows.github.io/) 
 
-Linux: 
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+[Linux](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
 
-OSX/MAC: 
-https://git-scm.com/download/mac
+[MAC](https://git-scm.com/download/mac) 
+
 
 Git typically consists of three parts, 
 
