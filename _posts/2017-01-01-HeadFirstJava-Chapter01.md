@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Head First Java - Chapter One
+title: Complete Java Basics Recap
 bigimg: /img/path.jpg
 published: true
 ---
 
-I will be doing a recap on the popular Head First Java book, giving an overview of everything I learned on a chapter to chapter basis, this can be used as an extra resource for anyone studying the book or be me to look over some notes.  **Chapter One**
-
--Firstly we create a source file, this is typically a .java file
--This source file goes through the compiler, any compiler issues will have to be resolved, e.g code that cannot be compiled e.g:
+Firstly we create a source file, this is typically a .java file
+This source file goes through the compiler, any compiler issues will have to be resolved, e.g code that cannot be compiled e.g:
 
      e.g int number = "five";
      
