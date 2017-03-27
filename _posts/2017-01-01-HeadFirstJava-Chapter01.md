@@ -12,8 +12,8 @@ I will be doing a recap on the popular Head First Java book, giving an overview 
 
      e.g int number = "five";
      
-- The outputted code from the compiler is bytecode and this is a .class file
-- We can run our program by starting the java virtual machine with this class file, the JVM translates the bytecode and runs the program.
+The outputted code from the compiler is bytecode and this is a .class file
+We can run our program by starting the java virtual machine with this class file, the JVM translates the bytecode and runs the program.
 
       int size = 27;  (Declare an integer called size, and *assign* it the value 27
 
@@ -50,12 +50,19 @@ We put Statements inside a method e.g -> System.out.println("Hello"); -> int a =
     
 
     Public Keyword -> Public so everyone  can access it
+    
     Class Keyword -> This is a class
+    
     Class Name -> Public class Dog
+    
     Static -> Class does not need to be instantiated (created) to call the methods
+    
     Void -> Method does not return something
+    
     main -> Name of the method, this could be anything
+    
     String[] args -> Method arguments, expects an array of Strings and they will be called args
+    
     System.out.print -> Print out to the console
     
 Doing something with java -> Statements, Declarations, Assignments, Method calls etc can all be ways we can *do* something.
