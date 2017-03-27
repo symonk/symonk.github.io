@@ -1,10 +1,5 @@
 ---
 layout: post
-published: false
-title: Head First Java - Chapter One Notes
----
----
-layout: post
 title: 'Head First Java - Chapter One'
 bigimg: /img/path.jpg
 published: true
