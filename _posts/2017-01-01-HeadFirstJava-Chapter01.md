@@ -15,32 +15,32 @@ I will be doing a recap on the popular Head First Java book, giving an overview 
 The outputted code from the compiler is bytecode and this is a .class file
 We can run our program by starting the java virtual machine with this class file, the JVM translates the bytecode and runs the program.
 
-      int size = 27;  (Declare an integer called size, and *assign* it the value 27
+int size = 27;  (Declare an integer called size, and *assign* it the value 27
 
-      String name = "Fido"; (Declare a String called name, *assign* it the value Fido
+String name = "Fido"; (Declare a String called name, *assign* it the value Fido
 
-      Dog myDog = new Dog(name, size);  (Create an object reference called myDog, Create and assign this      	reference to the new dog object
+Dog myDog = new Dog(name, size);  (Create an object reference called myDog, Create and assign this      	reference to the new dog object
 
-      x = size -5; (*assign* x the value of size minus 5)
+x = size -5; (*assign* x the value of size minus 5)
 
-      if (x < 15) myDog.bark(8); (if x is less than 15, call the bark method of myDog (Dog Object), passing in 	 the value of 8 as an argument
+if (x < 15) myDog.bark(8); (if x is less than 15, call the bark method of myDog (Dog Object), passing in 	 the value of 8 as an argument
 
-      while (x > 3) { myDog.play(); }   (while x is more than 3, call the play() method of myDog (Dog Object).
+while (x > 3) { myDog.play(); }   (while x is more than 3, call the play() method of myDog (Dog Object).
 
-      int[] numList = {2,4,6,8}; (Create an array of integers called numList, assign the values 2,4,6,8.     		Remember arrays are 0 indexed. so point 1, is actually 0. 0 = 2, 1 = 4, 2 = 6, 3 = 8.
+int[] numList = {2,4,6,8}; (Create an array of integers called numList, assign the values 2,4,6,8.     		Remember arrays are 0 indexed. so point 1, is actually 0. 0 = 2, 1 = 4, 2 = 6, 3 = 8.
 
-      System.out.println("Hello"); (Print out to the console "Hello")
+System.out.println("Hello"); (Print out to the console "Hello")
 
-      System.out.println("Dog");  (Print **on a new line** "Dog")
+System.out.println("Dog");  (Print **on a new line** "Dog")
 
-      String num = "8";
-      int z = Integer.parseInt(num); (create an int called z, assign it the value 8.  "8" is a string (num) 		so 	 we must cast it to an integer hence the Integer.parseInt(num), calling parseInt() passing in our String     allowing us to the get the value but as an int.
+String num = "8";
+int z = Integer.parseInt(num); (create an int called z, assign it the value 8.  "8" is a string (num) 		so 	 we must cast it to an integer hence the Integer.parseInt(num), calling parseInt() passing in our String     allowing us to the get the value but as an int.
 
-      try {
-          readTheFile("myFile.txt");
-      } catch (FileNotFoundException ex) {
-          System.out.printl("File Not Found");
-      }                                            (*try* to do something, in this instance call the 		 													 readTheFile() method passing in the myFile.text String as 												     an argument.  Catch a FileNotFoundException and print 													     out "File Not Found".  A File not found exception would be   	                                             thrown if the file myFile.txt could not be found
+try {
+readTheFile("myFile.txt");
+} catch (FileNotFoundException ex) {
+System.out.printl("File Not Found");
+}                                            (*try* to do something, in this instance call the 		 													 readTheFile() method passing in the myFile.text String as 												     an argument.  Catch a FileNotFoundException and print 													     out "File Not Found".  A File not found exception would be   	                                             thrown if the file myFile.txt could not be found
     
 Java initially started on version 1.02, current version is Java 1.8 (Java 8) However this book will be teaching us as of Java 5
 
