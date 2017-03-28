@@ -6,7 +6,7 @@ title: Think outside the box to get in
 In this post I will be outlining some concepts when testing a Login box for a web application.  Hopefully you can learn a thing or two which can be applied in more places than a simple login form.  You would think a simple login box can be covered in a miniscule amount of testcases, its pretty straight forward right? **wrong**.
 
 For the purpose of this tutorial, we will assume a the login box is similar to this one:
-![Image taken from premiumpixels.com]({{site.baseurl}}/http://turbo.premiumpixels.com/wp-content/uploads/2011/06/preview.jpg)
+![Image taken from premiumpixels.com](http://turbo.premiumpixels.com/wp-content/uploads/2011/06/preview.jpg)
 
 ### The Basics
 
