@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Login Security Testing
 ---
 In this post I will be outlining some concepts when testing a Login box for a web application.  Hopefully you can learn a thing or two which can be applied in more places than a simple login form.  You would think a simple login box can be covered in a miniscule amount of testcases, its pretty straight forward right? **wrong**.
