@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Login Security Testing
+title: Think outside the box to get in
 ---
 In this post I will be outlining some concepts when testing a Login box for a web application.  Hopefully you can learn a thing or two which can be applied in more places than a simple login form.  You would think a simple login box can be covered in a miniscule amount of testcases, its pretty straight forward right? **wrong**.
 
@@ -96,9 +96,13 @@ For the purpose of this tutorial, we will assume a the login box is similar to t
 
 	Ensure any elements, especially textboxes and or buttons have good locators, consider using id where possible, if there is no id attribute consider highlighting it to the developers to add to make automation on the product much easier and effecient.
 
-**SQL Injection**
+**SQL/Javascript Injection**
 
-	Enter **'OR''='** as username and or password, are you able to login or get any useful data/information back from the login?
+	Enter **'OR''='** as username and or password, are you able to login or get any useful data/information back from the login?  Also consider Javascript injection.
+    
+**Cookies**
+
+	Check cookies are created where necessarily and are working as intended, things like a session cookie, persistence etc.
 
 **Capability**
 
@@ -108,11 +112,11 @@ For the purpose of this tutorial, we will assume a the login box is similar to t
 
 	Consider Logging in as multiple users at the same time and record latency, this will give us a starting point for performance, does the time to login increase exponentially? do things crash? has the server buckled with just 20 users?  Consider doing some simple navaigation and logging out again as a bit of a soak test
 
-** Ensure Https**
+**Ensure Https**
 
 	Ensure HTTPS is being used, we don't want somebody sniffing packets and stealing a plaintext password from an internet cafe etc.
 
-** Anti-brute force measures**
+**Anti-brute force measures**
 
 	Ensure there is some sort of anti brute force protection, things like Captcha's etc, we don't want to allow a hacker to bombard the server continiously with no repercussions.
 
