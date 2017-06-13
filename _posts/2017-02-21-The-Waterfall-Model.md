@@ -2,7 +2,7 @@
 layout: post
 title: 'The Waterfall Model'
 bigimg: /img/path.jpg
-published: true
+published: false
 ---
 
 In this article we will be discussing both the agile and waterfall software development life cycles (SDLC's).  We will begin with discussing the waterfall model.  Not as prevalent today as it once was.  It was one of the first development life cycles to really come into the market at a mass scale.  The Waterfall SDLC has a number of different stages, these are outlined below with a brief description
