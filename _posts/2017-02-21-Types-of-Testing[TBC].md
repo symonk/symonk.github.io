@@ -46,6 +46,8 @@ Branch coverage is a lot more powerful that statement coverage and yields much b
 
 **Path Coverage:** Path coverage is the most complex white box testing technique, here we are assessing the flow throughout our software, our aim is simple - cover all lines of code & scenarios throughout.  This can get complex and we need to factor in our IF, UNTIL & WHEN Constructs.  Mapping out control flow diagrams can be extremely useful here,  a basic example of path coverage is outlined below:
 
+[Path Coverage](https://simonqa.files.wordpress.com/2017/06/jqo2j.png?w=680)
+
 
 So, looking at our diagram, Statement Coverage = 1, Branch Coverage = 2, Path Coverage = 4, Why? Simple - we need to hit the following paths to successfully execute our system from start to finish:
 
