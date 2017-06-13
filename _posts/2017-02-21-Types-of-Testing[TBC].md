@@ -193,7 +193,7 @@ This is used to help you identify a scaling strategy, what type of tech will we 
 
 99% of the time we use Performance testing as a means to identify the following - are database queries & stored procedures optimised?, is the application only invoking these when necessary?, are we receiving deadlocks in production? Are Page, API, Database calls slow or stalling and erroneous? Is our application or certain aspects of it using weird bandwidth, memory, CPU or disk I/O levels?  Are response times getting out of control under bigger loads?
 
-You would be very surprised the performance a badly designed system can suffer when it is used by many concurrent users, in order to start getting a handle on this stuff, check out my entry level Jmeter tutorial here: [My JMeter beginner tutorial](https://www.symonk.github.io/2017-02-23-Jmeter-POST-Login/)
+You would be very surprised the performance a badly designed system can suffer when it is used by many concurrent users, in order to start getting a handle on this stuff, check out my entry level Jmeter tutorial here: [My JMeter beginner tutorial](https://symonk.github.io/2017-02-23-Jmeter-POST-Login/)
 
 An absolutely invaluable  tool can be found here: [AppDynamics](https://www.appdynamics.co.uk/), I use this tool to monitor production and it provides a wealth of information to me for all layers of the system.
 
