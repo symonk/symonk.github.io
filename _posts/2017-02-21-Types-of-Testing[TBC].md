@@ -18,11 +18,14 @@ Lets say we are working at a company which has a relatively complex windows serv
 
 **Statement coverage:** Statement coverage is the act of hitting atleast all of the statements in our code at least once, typically statement coverage will opt for the true option as conditional statements typically ask for if/when something is true, do X, the main draw back being, we aren't evaluating the false scenario(s).  Consider the below example:
 
+```java
 Pseudo Code Example:
     Variable num1 & num2
     num3 = num1 + num2
     IF num3 > 50
     PRINT - "Success"
+    
+```
 
 Looking at the above code, our statement coverage would just ensure the sum of num1 + num2 was greater than 50.  Why? Because we have successfully executed the true scenario here which results in "Success" being printed.  As Mentioned earlier, we are ignoring the scenario here that num3 is less than or equal to 50.
 
