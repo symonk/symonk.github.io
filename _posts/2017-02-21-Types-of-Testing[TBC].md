@@ -53,6 +53,7 @@ So, looking at our diagram, Statement Coverage = 1, Branch Coverage = 2, Path
 1A-2C-3D-E-4F
 
 Unit Testing
+{: style="color:black; font-size: 100%; text-align: center;"}
 
  This is a term you will come across often and something many developer(s) or companies either A) Dislike doing or B) Don't know to do, it does  take a little time so whats  the point wasting time, lets make millions instead!  Unit testing has vast benefits for software but before we begin don't neglect unit testing within the automation framework itself, this is something that is really popular, unit test your test framework!  Thing of a unit test as some code with the sole purpose of testing live/production bound code.    What is the benefits? When you eventually build your product bigger and bigger, lack or no unit testing will hit you hard, making even the smallest changes startes creating a massive unknown, what is broken as a result? we haven't got a clue! it's OK, QA will spot it!  Unit testing/TDD helps you know when its time to stop coding, this is more and more important with the hip new agile way everyone is crazing about.  Some big advantages of unit testing are:
 
@@ -81,6 +82,7 @@ In order to unit test this, we could begin with the following unit test:
 This is an extremely simple example, but you get the concept we are writing test code to invoke and evaluate our production code with typical Expected and Actual results.
 
 Functional Vs Non Functional
+{: style="color:black; font-size: 100%; text-align: center;"}
 
 These are two other terms that are thrown about often and I will be writing another post dedicated to these specifically, so please check back later, as of now they are currently in writing, but if you can't wait (I know you couldn't) here is a simple overview of Functional testing.
 
@@ -94,6 +96,7 @@ Check the application functions as per the end users needs
 My article on Functional Vs Non Functional can he found here: http://www.editmelater.com
 
 Sanity Testing
+{: style="color:black; font-size: 100%; text-align: center;"}
 
 Sanity testing (not to be confused with insanity - thats something completely different) is performed after a build has been deployed but before regression or functional testing occurs, note we deem it Sanity testing with minor changes have been committed to the build to ensure sane rational has been applied by the developer before we commit to properly testing it, for example if we had a calculation on our web app that was recently changed and if we initially input 2 * 2 with a result of 10, this build has failed and we will not be wasting any time on it.
 
