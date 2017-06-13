@@ -106,7 +106,7 @@ Determining our expected output based on the functions spec
 Executing our test cases
 Comparison of our actual and expected results
 Check the application functions as per the end users needs
-My article on Functional Vs Non Functional can he found here: http://www.editmelater.com
+My article on Functional Vs Non Functional can he found here: [My Functional Blog Post](https://www.google.com)
 
 **Sanity Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
@@ -192,9 +192,9 @@ This is used to help you identify a scaling strategy, what type of tech will we 
 
 99% of the time we use Performance testing as a means to identify the following - are database queries & stored procedures optimised?, is the application only invoking these when necessary?, are we receiving deadlocks in production? Are Page, API, Database calls slow or stalling and erroneous? Is our application or certain aspects of it using weird bandwidth, memory, CPU or disk I/O levels?  Are response times getting out of control under bigger loads?
 
-You would be very surprised the performance a badly designed system can suffer when it is used by many concurrent users, in order to start getting a handle on this stuff, check out my entry level Jmeter tutorial here: https://www.symonk.github.io/2017-02-23-Jmeter-POST-Login/
+You would be very surprised the performance a badly designed system can suffer when it is used by many concurrent users, in order to start getting a handle on this stuff, check out my entry level Jmeter tutorial here: [My JMeter beginner tutorial](https://www.symonk.github.io/2017-02-23-Jmeter-POST-Login/)
 
-An absolutely invaluable  tool can be found here: https://www.appdynamics.co.uk/, I use this tool to monitor production and it provides a wealth of information to me for all layers of the system.
+An absolutely invaluable  tool can be found here: [My JMeter beginner tutorial](https://www.appdynamics.co.uk/), I use this tool to monitor production and it provides a wealth of information to me for all layers of the system.
 
 **Security & Penetration Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
@@ -204,7 +204,7 @@ Just like Performance, the Security sector can be broken down into many differen
 **Vulnerability scanners**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
-The purpose of this is to look for known security issues via using tools to match conditions to known threats. There are many products on the market which offer these capabilities, a common example would be OWASP ZAP at https://www.owasp.org/ or BurpeSuite https://portswigger.net/burp/.  Metasploit from Rapid7 is also an amazing piece of software for exploring and using known exploits, a must for any upcoming pentester.
+The purpose of this is to look for known security issues via using tools to match conditions to known threats. There are many products on the market which offer these capabilities, a common example would be OWASP ZAP at [OWASP](https://www.owasp.org/) or BurpeSuite [BurpSuite](https://www.portswigger.net/burp/).  Metasploit from Rapid7 is also an amazing piece of software for exploring and using known exploits, a must for any upcoming pentester.
 
 **SQL Injection**
 {: style="color:black; font-size: 100%; text-align: center;"}
