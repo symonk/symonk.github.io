@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Basic SQL Querying'
+title: 'Improve your SQL'
 bigimg: /img/path.jpg
 published: true
 ---
