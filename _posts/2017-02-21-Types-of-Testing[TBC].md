@@ -152,14 +152,16 @@ End-to-end testing involves ensuring that the integrated components of an applic
 
 For example, a simplified end-to-end testing of an email application might involve:
 
-Logging in to the application
-Accessing the inbox
-Opening and closing the mailbox
-Composing, forwarding or replying to email
-Checking the sent items
-Logging out of the application
-Performance Testing
+- Logging in to the application
+- Accessing the inbox
+- Opening and closing the mailbox
+- Composing, forwarding or replying to email
+- Checking the sent items
+- Logging out of the application
+- Performance Testing
 
+**Performance Testing**
+{: style="color:black; font-size: 100%; text-align: center;"}
 Performance testing is quite a big space, it can be broken down into multiple subsections,
 
 **Load Testing**
