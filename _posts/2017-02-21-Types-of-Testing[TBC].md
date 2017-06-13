@@ -34,7 +34,8 @@ Looking at the above code, our statement coverage would just ensure the sum of n
     IF (number > 10)
     PRINT - "Hi"
     ELSE
-    PRINT - "Bye"```
+    PRINT - "Bye"
+ ```
 
 
 
