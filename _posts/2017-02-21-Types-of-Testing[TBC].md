@@ -71,7 +71,6 @@ I could go on all day but lets be fair for anyone reading who doesn't see the ad
 
 
 ```java
-
 public int calculate(int a, int b) { 
     return a*b;   
  }
@@ -81,7 +80,6 @@ public int calculate(int a, int b) {
 In order to unit test this, we could begin with the following unit test:
 
 ```java
-
 @Test
  public void calculateValid() {
      int a = 25;
