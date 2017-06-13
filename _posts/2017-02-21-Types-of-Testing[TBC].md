@@ -35,9 +35,9 @@ Looking at the above code, our statement coverage would just ensure the sum of n
 Pseudo Code Example:
     Variable number
     IF (number > 10)
-    PRINT - "HI"
-    ELSE
-    PRINT - "BYE"
+    PRINT - "HI!"
+    ELSE
+    PRINT - "BYE!"
     
 ```
 
