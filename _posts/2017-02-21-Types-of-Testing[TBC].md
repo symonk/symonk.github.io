@@ -195,7 +195,7 @@ This is used to help you identify a scaling strategy, what type of tech will we 
 
 You would be very surprised the performance a badly designed system can suffer when it is used by many concurrent users, in order to start getting a handle on this stuff, check out my entry level Jmeter tutorial here: [My JMeter beginner tutorial](https://www.symonk.github.io/2017-02-23-Jmeter-POST-Login/)
 
-An absolutely invaluable  tool can be found here: [My JMeter beginner tutorial](https://www.appdynamics.co.uk/), I use this tool to monitor production and it provides a wealth of information to me for all layers of the system.
+An absolutely invaluable  tool can be found here: [AppDynamics](https://www.appdynamics.co.uk/), I use this tool to monitor production and it provides a wealth of information to me for all layers of the system.
 
 **Security & Penetration Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
