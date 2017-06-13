@@ -8,7 +8,7 @@ published: true
 The aim of this blog post is to attempt to encapsulate some of the commonly known terminology around testing into one easy to read (and interpret!) place.  Terminology comes and goes and new types of testing, processes and methodologies enter the space on a daily basis.  We will start the blog post off with something that most of the readers will be familiar with, Black Box Testing & White Box Testing.  Simply put, Black Box Testing is when we assume the role of an end user, functionally using the system.  We have no idea of any of the inner workings, we do not know what the source code looks like, we do not know anything about database structure, queries or stored procedures etc.  We load up the system, we login and we replicate end user actions and investigate based solely on things available to us.
 
 **White Box** Testing Vs. **Black Box** Testing
-
+{: style="color:black; font-size: 100%; text-align: center;"}
 
 White Box Testing is slightly more intrusive, we may be aware of the database structure, what queries and stored procedures are firing off as a result of our action(s) and can freely access the source code.  We can debug and step through the code to really investigate what is going on, we can access the database to check out data/table structure, where and when data is moving and any stored procedures that could be getting called.
 
