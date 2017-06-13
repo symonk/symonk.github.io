@@ -107,7 +107,7 @@ Determining our expected output based on the functions spec
 Executing our test cases
 Comparison of our actual and expected results
 Check the application functions as per the end users needs
-My article on Functional Vs Non Functional can he found here: [My Functional Blog Post](https://www.google.com)
+My article on Functional Vs Non Functional can he found here: [Coming Soon](https://symonk.github.io)
 
 **Sanity Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
