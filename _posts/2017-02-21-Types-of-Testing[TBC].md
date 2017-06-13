@@ -93,7 +93,7 @@ In order to unit test this, we could begin with the following unit test:
  
 This is an extremely simple example, but you get the concept we are writing test code to invoke and evaluate our production code with typical Expected and Actual results.
 
-Functional Vs Non Functional
+**Functional Vs Non Functional**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
 These are two other terms that are thrown about often and I will be writing another post dedicated to these specifically, so please check back later, as of now they are currently in writing, but if you can't wait (I know you couldn't) here is a simple overview of Functional testing.
