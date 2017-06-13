@@ -234,8 +234,8 @@ This one is pretty self explanatory, for example accessing hidden pages via just
 {: style="color:black; font-size: 100%; text-align: center;"}
 
 A lot of people neglect all angles of attack, if your web application is absolutely bulletproof (sorry to tell you, it isn't!)  Is your network bulletproof? is your database bulletproof?  Using default accounts e.g "sa" on Microsoft SQL Server are a big no no, using accounts with privileges and access more than necessary is a huge no no, the most excessive rights services and accounts have, the more possible damage can be done if they are compromised.  Are your servers up to date? if you servers are lacking windows updates they will be vulnerable exploits, have you badly setup some software ? NMAP scanning combined with Metasploit could make your network and or application(s) a complete lottery for hackers.  Next up is error & exception handling, are you revealing sensitive information such as a stack trace? if so you better stop it, anything you give is making it easier for attackers, is your tech setup correctly and securely? even if you are using things like SpringMVC and very popular frameworks / libraries you need to ensure appropriate settings are configured to remain secure.
-**
-Sensitive Data Exposure**
+
+**Sensitive Data Exposure**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
 Sensitive Data Exposure is pretty straight forward, the elephant in the room is - are you transferring sensitive data unencrypted / in plain text and secondly are you storing it that way, everyone focuses on the storing of the data and often neglects the initial transfer of it.  If encrypted are you using suitable encryption levels? e.g Using MD5 stuff nowadays is suicide, is your SALT the same for every user? typically you want it completely randomised per user per transaction.  Are your HTTP responses/ headers adaquately setup.  Are your systems safely validated? for example, consider this page profile?id=100, this displays my profile, but what if i manually change it to id=101, am I shown someone elses information?
