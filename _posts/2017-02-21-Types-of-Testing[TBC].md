@@ -69,12 +69,14 @@ Makes you feel good (person-specific, no promises).
 Imperfect tests executed often are much better than perfect tests never executed
 I could go on all day but lets be fair for anyone reading who doesn't see the advantages here is a disadvantage, it does take a little time. As everything is a bit easier to digest with an example, see the below example for calculating the sum of two ints:
 
+
 ```java
 
 public int calculate(int a, int b) { 
-    return a*b;
-    
- }```
+    return a*b;   
+ }
+ 
+ ```
 
 In order to unit test this, we could begin with the following unit test:
 
