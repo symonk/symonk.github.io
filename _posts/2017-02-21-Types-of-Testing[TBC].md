@@ -30,7 +30,6 @@ Looking at the above code, our statement coverage would just ensure the sum of n
 
 
 ```java
-
     Variable number
     IF (number > 10)
     PRINT - "Hi"
