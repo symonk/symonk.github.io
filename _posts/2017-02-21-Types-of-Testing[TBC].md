@@ -132,6 +132,7 @@ UAT is also known as BETA testing, it is a part of the process (tho not always i
 **Regression Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
+
 Regression testing is the act or re-testing the application under test. For example, we have a stable application in production already, happy paying customers, great! Now the customer demands a new module built into the system, such as a shopping module. Now, while nowadays you would typically take an agile approach to the testing of the new shopping module, we also need to be covering the old existing module with tests as well, this is regression testing. We are making sure new functionality has not impacted older, stable code. Typically regression testing would be heavily automated where reasonable but it will always require some manual effort as well. We need to test the old modules to ensure they are working as intended, building tests which will become regression tests for shopping later on, while identifying ways to remove as much manual effort as possible, Automating the application and API’s etc.
 **
 Usability Testing**
