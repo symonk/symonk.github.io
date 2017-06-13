@@ -31,17 +31,15 @@ Looking at the above code, our statement coverage would just ensure the sum of n
 
 **Branch coverage:** Branch coverage is similar to Statement Coverage, however we also want to encompass the false scenarios here.  Lets consider another piece of pseudo code, an IF/ELSE Statement,  see our psuedo code below:
 
-
 ```java
-    Variable number
-    IF (number > 10)
-    PRINT - "Hi"
+Pseudo Code Example:
+    Variable number
+    IF (number > 10)
+    PRINT - "Hi"
     ELSE
     PRINT - "Bye"
     
- ```
-
-
+```
 
 With Statement coverage, we would just set "number" to something over 10, but using Branch Coverage we want to hit the ELSE condition here also, so we would essentially have two scenarios, where number = less than or equal to 10 & where number = greater than 10.  With these two scenarios, all lines of the above pseudo code would see execution.
 
