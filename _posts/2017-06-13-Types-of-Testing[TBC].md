@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Different Types of Testing
+title: Different Testing our Testing Types
 bigimg: /img/path.jpg
 published: true
 ---
