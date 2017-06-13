@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'HOW TO: Record HTTP Requests and Login with JMETER'
+title: 'HOW TO: Performance Test with JMeter'
 bigimg: /img/path.jpg
 published: true
 ---
