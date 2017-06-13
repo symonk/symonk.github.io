@@ -255,7 +255,7 @@ Do you have adaquate systems in place to prevent brute forcing attacks? Does you
 **Cross Site Request Forgery [CSRF]**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
-Cross Site Request Forgery is another interesting one, consider a banking system where a logged in user can send balance using a GET request (terrible, I know.. but you get the point).  ?transferFundsAmount=500&transferToAccount=ref500.  This HTTP GET request will transfer $500 to the account "ref500".  What CSRF basically does is when a user is authenticated on the bank for example, a hacker can craft a request and force the user into navigating to it in order to slyly execute the bank transaction in the background, this can be done with an image attachment for example where the <img src> contains the request.
+Cross Site Request Forgery is another interesting one, consider a banking system where a logged in user can send balance using a GET request (terrible, I know.. but you get the point).  ?transferFundsAmount=500&transferToAccount=ref500.  This HTTP GET request will transfer $500 to the account "ref500".  What CSRF basically does is when a user is authenticated on the bank for example, a hacker can craft a request and force the user into navigating to it in order to slyly execute the bank transaction in the background, this can be done with an image attachment for example where the **img src** contains the request.
 
 To check whether an application is vulnerable, see if any links and forms lack an unpredictable CSRF token. Without such a token, attackers can forge malicious requests. An alternate defense is to require the user to prove they intended to submit the request, such as through reauthentication.
 
