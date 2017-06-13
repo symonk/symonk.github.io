@@ -2,7 +2,7 @@
 layout: post
 title: Complete Java Basics Recap
 bigimg: /img/path.jpg
-published: true
+published: false
 ---
 
 Firstly we create a source file, this is typically a .java file
