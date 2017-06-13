@@ -16,7 +16,7 @@ The big question then, which is better?  The answer is neither, if you are not
 
 Lets say we are working at a company which has a relatively complex windows service, when an Android tablet is connected to service begins to flow from start to finish, sending thousands of commands to your device based on a wealth of scenarios, this can seem daunting at first but with good White Box Testing techniques, we can build out our testing strategy to strengthen our service and advance our product.  How do you do this then? using some White Box Testing techniques that I will outline below:
 
-Statement coverage: Statement coverage is the act of hitting atleast all of the statements in our code at least once, typically statement coverage will opt for the true option as conditional statements typically ask for if/when something is true, do X, the main draw back being, we aren't evaluating the false scenario(s).  Consider the below example:
+**Statement coverage:** Statement coverage is the act of hitting atleast all of the statements in our code at least once, typically statement coverage will opt for the true option as conditional statements typically ask for if/when something is true, do X, the main draw back being, we aren't evaluating the false scenario(s).  Consider the below example:
 
 Pseudo Code Example:
     Variable num1 & num2
@@ -26,23 +26,23 @@ Pseudo Code Example:
 
 Looking at the above code, our statement coverage would just ensure the sum of num1 + num2 was greater than 50.  Why? Because we have successfully executed the true scenario here which results in "Success" being printed.  As Mentioned earlier, we are ignoring the scenario here that num3 is less than or equal to 50.
 
-Branch coverage: Branch coverage is similar to Statement Coverage, however we also want to encompass the false scenarios here.  Lets consider another piece of pseudo code, an IF/ELSE Statement,  see our psuedo code below:
+**Branch coverage:** Branch coverage is similar to Statement Coverage, however we also want to encompass the false scenarios here.  Lets consider another piece of pseudo code, an IF/ELSE Statement,  see our psuedo code below:
 
-
+```
     Pseudo Code Example:
     Variable number
     IF (number > 10)
     PRINT - "Hi"
     ELSE
     PRINT - "Bye"
-
+```
 
 
 With Statement coverage, we would just set "number" to something over 10, but using Branch Coverage we want to hit the ELSE condition here also, so we would essentially have two scenarios, where number = less than or equal to 10 & where number = greater than 10.  With these two scenarios, all lines of the above pseudo code would see execution.
 
 Branch coverage is a lot more powerful that statement coverage and yields much better results.  Branch coverage achieves Statement coverage, but we cannot assume the reverse, Statement coverage covers little of Branch coverage.
 
-Path Coverage: Path coverage is the most complex white box testing technique, here we are assessing the flow throughout our software, our aim is simple - cover all lines of code & scenarios throughout.  This can get complex and we need to factor in our IF, UNTIL & WHEN Constructs.  Mapping out control flow diagrams can be extremely useful here,  a basic example of path coverage is outlined below:
+**Path Coverage:** Path coverage is the most complex white box testing technique, here we are assessing the flow throughout our software, our aim is simple - cover all lines of code & scenarios throughout.  This can get complex and we need to factor in our IF, UNTIL & WHEN Constructs.  Mapping out control flow diagrams can be extremely useful here,  a basic example of path coverage is outlined below:
 
 
 So, looking at our diagram, Statement Coverage = 1, Branch Coverage = 2, Path Coverage = 4, Why? Simple - we need to hit the following paths to successfully execute our system from start to finish:
