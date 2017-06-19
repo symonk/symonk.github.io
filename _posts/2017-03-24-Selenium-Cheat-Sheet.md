@@ -54,42 +54,42 @@ WebDriver driver = new ChromeDriver();
 What can we then do with our driver? here are some of the key methods we can utilise with selenium chromedriver:
 
 ```
-**Clear out a textbox**
+Clear out a textbox
 driver.findElement(By.id("id")).clear();
 ```
 
 ``` 
-**Get the text of a webelement**
+Get the text of a webelement
 driver.findElement(By.id("id")).getText();
 
 ```
 
 ```
-**Send text/keys to the webelement**
+Send text/keys to the webelement
 driver.findElement(By.id("id")).sendKeys("Hello!");
 
 ```
 
 ``` 
-**Get attribute of webelement**
+Get attribute of webelement
 driver.findElement(By.id("id")).getAttribute("value");
 
 ```
 
 ``` 
-**Get attribute of webelement**
+Get attribute of webelement
 driver.findElement(By.id("id")).getAttribute("value");
 
 ```
 
 ``` 
-**Click a webelement**
+Click a webelement
 driver.findElement(By.id("id")).click();
 
 ```
 
 ``` 
-**Check an element is enabled or not (true/false boolean)**
+Check an element is enabled or not (true/false boolean)
 driver.findElement(By.id("id")).isEnabled();
 
 ```
@@ -101,24 +101,24 @@ driver.findElement(By.id("id")).isDisplayed();
 ```
 
 ```
-**Check an element is selected or not (true/false boolean)**
+Check an element is selected or not (true/false boolean)
 driver.findElement(By.id("id")).isSelected();
 
 ```
 
 ``` 
-**Get current page title**
+Get current page title
 driver.getTitle();
 
 ```
 
 ``` 
-**Get the value attribue of a webelement (e.g - current text in the textbox)**
+Get the value attribue of a webelement (e.g - current text in the textbox)
 driver.findElement(By.id("id")).getValue();
 
 ```
 
-**Navigating using your driver:**
+Navigating using your driver:
 ``` 
 Go to a particular website
 driver.navigate().to("http://www.google.com");
@@ -154,7 +154,56 @@ driver.navigate().forward();
 
 Selenium offers an array of methods to locate webelements on the page, best coupled with PageObjectModel to create objects of your pages for easy reuse and more stable/less brittle testing.  The main locators are outlined below:
 
-1. XPATH - 
+1. XPATH - Traversing through the entire document, very powerful but pretty slow, always opt for ID before this if available.
+
+```
+This locates the second input element beneath the element with an id value of ‘register’
+
+driver.findElement(By.xpath(“//input[@id=’myElementId’]”));
+
+```
+
+2. CSS - Finding an element based on the css class attribute, faster than Xpath but still use ID if you have it available to you.
+
+```
+driver.findElement(By.cssSelector(“h1[title]”);
+
+```
+
+3. ID - Finding an element by its ID attribute - blazing fast and always best to use if applicable
+
+```
+driver.findElement(By.id("abc")).click();
+
+```
+
+4. Name - Similar to ID, we are finding by the name attribute
+
+```
+driver.findElement(By.name("abc"));
+```
+
+5.  Linktext - Partial Linktext is also available, essentially the text on the element, avoid if you can, there could be multiple things with the same value on the page and this will use the first one.
+
+```
+driver.findElement(By.linkText(“Click Me!”));
+driver.findElement(By.partialLinkText("Click M"));
+
+```
+
+6.  Tagname - Uses the tag attribue to find an element, not really recommended outside of getting the page header/title
+
+```
+driver.findElement(By.tagName("h1"));
+
+```
+
+7. Classname - Finding an element by the class name attribute
+
+```
+driver.findElement(By.classname("date-header"));
+
+```
 
 
 
