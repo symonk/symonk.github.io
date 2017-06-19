@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selenium Cheat Sheet TBC
+title: Selenium Cheat Sheet
 bigimg: /img/path.jpg
 published: true
 ---
