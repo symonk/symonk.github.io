@@ -42,5 +42,92 @@ Wait abc = new FluentWait(driver)
 
 Driver implementations, for the purpose of this piece we will be outlining how to implement your driver for chrome, there is a wide range of supported browsers so you will have to research those yourself, however it is very similar:
 
+We need to instantiate an instance of chrome driver:
+
+```
+System.setProperty("webdriver.chrome.driver", "C:/Automation/chromedriver.exe");
+ChromeOptions options = new ChromeOptions();
+options.addArguments("--start-maximized");
+WebDriver driver = new ChromeDriver();
+```
+
+What can we then do with our driver? here are some of the key methods we can utilise with selenium chromedriver:
+
+``` Clear out a textbox
+driver.findElement(By.id("id")).clear();
+```
+
+``` Get the text of a webelement
+driver.findElement(By.id("id")).getText();
+```
+
+``` Send text/keys to the webelement
+driver.findElement(By.id("id")).sendKeys("Hello!");
+```
+
+``` Get attribute of webelement
+driver.findElement(By.id("id")).getAttribute("value");
+```
+
+``` Get attribute of webelement
+driver.findElement(By.id("id")).getAttribute("value");
+```
+
+``` Click a webelement
+driver.findElement(By.id("id")).click();
+```
+
+``` Check an element is enabled or not (true/false boolean)
+driver.findElement(By.id("id")).isEnabled();
+```
+
+``` Check an element is displayed or not (true/false boolean)
+driver.findElement(By.id("id")).isDisplayed();
+```
+
+``` Check an element is selected or not (true/false boolean)
+driver.findElement(By.id("id")).isSelected();
+```
+``` Get current page title
+driver.getTitle();
+```
+
+``` Get the value attribue of a webelement (e.g - current text in the textbox)
+driver.findElement(By.id("id")).getValue();
+```
+
+**Navigating using your driver:***
+``` Go to a particular website
+driver.navigate().to("http://www.google.com");
+```
+
+``` Go to a particular website
+driver.get("http://www.google.com");
+```
+
+``` Refresh the page
+driver.navigate().refresh();
+```
+
+``` Go Back a page
+driver.navigate().back();
+```
+
+``` Go Forward a page
+driver.navigate().forward();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
