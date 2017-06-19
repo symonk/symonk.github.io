@@ -205,6 +205,25 @@ driver.findElement(By.classname("date-header"));
 
 ```
 
+--------------------------------------------------------------------------------
+**Selenium Exceptions**
+
+Selenium has a number of different exceptions associated with it,
+
+```
+ElementNotVisibleException -> Element is present in the DOM (Document Object Model) but it is not visible, thus we are not able to interact with it.
+
+NoSuchAttributeException -> Looking for an attribue that does not exist on an element, for example By.id("abc").getAttribute("wrong");
+
+NoSuchElementException -> Element simply cannot be found, Fluent/Implicit/explicit wait has expired
+
+NoSuchFrameException -> Switching to a frame which does not exist
+NoSuchWindowException -> Switch to a window which does not exist
+
+StaleElementReferenceException -> When the DOM has been updated after you have a reference to a webelement causing it to go stale, calling methods on your now stale element will throw this.
+
+```
+
 
 
 
