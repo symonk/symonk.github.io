@@ -154,7 +154,7 @@ driver.navigate().forward();
 
 Selenium offers an array of methods to locate webelements on the page, best coupled with PageObjectModel to create objects of your pages for easy reuse and more stable/less brittle testing.  The main locators are outlined below:
 
-- XPATH - Traversing through the entire document, very powerful but pretty slow, always opt for ID before this if available.
+- **XPATH** - Traversing through the entire document, very powerful but pretty slow, always opt for ID before this if available.
 
 ```
 This locates the second input element beneath the element with an id value of ‘register’
@@ -163,27 +163,27 @@ driver.findElement(By.xpath(“//input[@id=’myElementId’]”));
 
 ```
 
-- CSS - Finding an element based on the css class attribute, faster than Xpath but still use ID if you have it available to you.
+- **CSS** - Finding an element based on the css class attribute, faster than Xpath but still use ID if you have it available to you.
 
 ```
 driver.findElement(By.cssSelector(“h1[title]”);
 
 ```
 
-- ID - Finding an element by its ID attribute - blazing fast and always best to use if applicable
+- **ID** - Finding an element by its ID attribute - blazing fast and always best to use if applicable
 
 ```
 driver.findElement(By.id("abc")).click();
 
 ```
 
-- Name - Similar to ID, we are finding by the name attribute
+- **Name** - Similar to ID, we are finding by the name attribute
 
 ```
 driver.findElement(By.name("abc"));
 ```
 
--  Linktext - Partial Linktext is also available, essentially the text on the element, avoid if you can, there could be multiple things with the same value on the page and this will use the first one.
+-  **Linktext** - Partial Linktext is also available, essentially the text on the element, avoid if you can, there could be multiple things with the same value on the page and this will use the first one.
 
 ```
 driver.findElement(By.linkText(“Click Me!”));
@@ -191,14 +191,14 @@ driver.findElement(By.partialLinkText("Click M"));
 
 ```
 
--  Tagname - Uses the tag attribue to find an element, not really recommended outside of getting the page header/title
+-  **Tagname** - Uses the tag attribue to find an element, not really recommended outside of getting the page header/title
 
 ```
 driver.findElement(By.tagName("h1"));
 
 ```
 
-- Classname - Finding an element by the class name attribute
+- **Classname** - Finding an element by the class name attribute
 
 ```
 driver.findElement(By.classname("date-header"));
