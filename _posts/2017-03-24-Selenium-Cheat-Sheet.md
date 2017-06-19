@@ -56,7 +56,6 @@ What can we then do with our driver? here are some of the key methods we can uti
 ```
 Clear out a textbox
 driver.findElement(By.id("id")).clear();
-
 ```
 
 ``` 
