@@ -53,82 +53,99 @@ WebDriver driver = new ChromeDriver();
 
 What can we then do with our driver? here are some of the key methods we can utilise with selenium chromedriver:
 
-``` Clear out a textbox
+```
+Clear out a textbox
 driver.findElement(By.id("id")).clear();
 
 ```
 
-``` Get the text of a webelement
+``` 
+Get the text of a webelement
 driver.findElement(By.id("id")).getText();
 
 ```
 
-``` Send text/keys to the webelement
+```
+Send text/keys to the webelement
 driver.findElement(By.id("id")).sendKeys("Hello!");
 
 ```
 
-``` Get attribute of webelement
+``` 
+Get attribute of webelement
 driver.findElement(By.id("id")).getAttribute("value");
 
 ```
 
-``` Get attribute of webelement
+``` 
+Get attribute of webelement
 driver.findElement(By.id("id")).getAttribute("value");
 
 ```
 
-``` Click a webelement
+``` 
+Click a webelement
 driver.findElement(By.id("id")).click();
 
 ```
 
-``` Check an element is enabled or not (true/false boolean)
+``` 
+Check an element is enabled or not (true/false boolean)
 driver.findElement(By.id("id")).isEnabled();
 
 ```
 
-``` Check an element is displayed or not (true/false boolean)
+``` 
+Check an element is displayed or not (true/false boolean)
 driver.findElement(By.id("id")).isDisplayed();
 
 ```
 
-``` Check an element is selected or not (true/false boolean)
+```
+Check an element is selected or not (true/false boolean)
 driver.findElement(By.id("id")).isSelected();
 
 ```
-``` Get current page title
+
+``` 
+Get current page title
 driver.getTitle();
 
 ```
 
-``` Get the value attribue of a webelement (e.g - current text in the textbox)
+``` 
+Get the value attribue of a webelement (e.g - current text in the textbox)
 driver.findElement(By.id("id")).getValue();
 
 ```
 
 **Navigating using your driver:***
-``` Go to a particular website
+``` 
+Go to a particular website
 driver.navigate().to("http://www.google.com");
 
 ```
 
-``` Go to a particular website
+``` 
+Go to a particular website
 driver.get("http://www.google.com");
 
 ```
 
-``` Refresh the page
+``` 
+Refresh the page
 driver.navigate().refresh();
 
 ```
 
-``` Go Back a page
+``` 
+Go Back a page
 driver.navigate().back();
 
 ```
 
-``` Go Forward a page
+``` 
+Go Forward a page
 driver.navigate().forward();
 
 ```
