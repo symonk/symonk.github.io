@@ -224,6 +224,34 @@ StaleElementReferenceException -> When the DOM has been updated after you have a
 
 ```
 
+---------------------------------------------------------------------------------------
+**Interacting with Frames/Windows**
+
+In selenium sometimes we need to change our focus to another window, in order to do that we need to get our current window handle, perhaps get all available windows handles and make the switch, remembering to switch back after:
+
+```	
+String current = driver.getWindowHandle(); //Return a string of alphanumeric window handle
+
+Set<String> Handles = driver.getWindowHandles(); //Return a set of window handle
+
+driver.switchTo().window("windowName");
+driver.switchTo().window(current);
+
+```
+
+In order to switch to a different frame/alert, we use this simply syntax:
+
+```
+Alert alert = driver.switchTo().alert();
+
+Alert alert = driver.switchTo().alert();
+alert.dismiss();
+alert.accept();
+alert.getText();
+
+```
+
+
 
 
 
