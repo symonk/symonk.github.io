@@ -2,7 +2,7 @@
 layout: post
 title: 'Database DDL Vs DML'
 bigimg: /img/path.jpg
-published: false
+published: true
 ---
 
 # Database Definition Language (DDL) Vs. Database Manipulation Language (DML)
