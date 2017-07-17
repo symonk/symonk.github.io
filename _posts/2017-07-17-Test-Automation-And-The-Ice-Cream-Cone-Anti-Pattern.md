@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Test-Automation-And-The-Ice-Cream-Cone-Anti-Pattern
+title: Test Automation & The Ice-Cream Cone Anti-Pattern
 ---
 ## Anti-Pattern: Software Automation Ice Cream Cone
 
