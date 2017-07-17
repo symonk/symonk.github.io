@@ -23,12 +23,12 @@ description: My QA articles
 
 # List of links in the navigation bar
 navbar-links:
-  Articles:
-    - SQL Querying: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
-    - REST APIs: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
-    - Testing Types: "https://symonk.github.io/2017-03-21-Types-of-Testing/"
-    - Waterfall Model: "https://symonk.github.io/2017-03-21-The-Waterfall-Model/"
-    - DDL & DML: " https://symonk.github.io/2017-03-21-Database-DDL-Vs-DML/"
+ # Articles:
+ #   - SQL Querying: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
+ #   - REST APIs: "https://symonk.github.io/2017-03-21-Basic-SQL-Queries/"
+ #   - Testing Types: "https://symonk.github.io/2017-03-21-Types-of-Testing/"
+ #   - Waterfall Model: "https://symonk.github.io/2017-03-21-The-Waterfall-Model/"
+ #   - DDL & DML: " https://symonk.github.io/2017-03-21-Database-DDL-Vs-DML/"
    
   Simon's Github: "http://www.github.com/symonk"
 
