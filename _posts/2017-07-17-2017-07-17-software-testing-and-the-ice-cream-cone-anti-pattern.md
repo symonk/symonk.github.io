@@ -1,0 +1,39 @@
+---
+layout: post
+published: false
+title: 2017-07-17-Software-Testing-And-The-Ice-Cream-Cone-Anti-Pattern
+---
+## Anti-Pattern: Software Automation Ice Cream Cone
+
+If you are working in an agile software development team (a good chunk of us at this point) then you have possibly came across the software testing pyramid.  What is it?  It's a relatively simple concept which outlines where you should focus when building out your automation efforts.  Figures are thrown about loosely here, it is _advised_ to aim for a 70/20/10 split, but breaking away from that won't hurt, operating on ~60/25/15 won't bankrupt your company, don't worry.  Don't get caught up on the figures when adhering to the testing pyramid, make sure the tests you are adding are worthwhile and not just for the sake of it, **ROI** in mind is key.  There are typically 4 stages in the testing pyramid: Unit, Integration, GUI, Manual(Scripted/Exploratory).  If you take anything away from this article, just remember its pretty bad and unbeleivably common to flip the pyramid upside down or have simply none at all.
+
+1. **Unit Tests:**  The bulk base of the testing pyramid, when building out the software it is critical to be developing solid unit tests alongside the production code.  These tests are by far the cheapest and easiest to create & maintain, they are excellent return on investment.  Unit tests allow us to test our work as we go, getting that feedback instantly.  Not only do we get instant feedback (they are very quite to execute in comparison to that of end-2-end GUI tests) but we know **exactly** where the bug is, everything is so low level and split up that when we find a bug, diagnosing it is a piece of cake, very little time is spent diagnosing and figuring out what has went wrong at the unit level, debugging a selenium end to end test is much more time consuming.  Unit testing is the first port of call, so any bugs we find using these tests are immensely cheap, its common knowledge that the longer a bug survives and proceeds through the lifecycle, the more expensive it becomes.  Accordingly to google, you should aim for around 70% of your automated tests residing at the unit level, again use these figures loosely. (**See diagram below**).
+
+2. **Service/Integration Tests:** After the unit tests have all executed successfully and passed, we can then proceed onto the Integration level tests.  This is our second biggest block of the testing pyramid (~20%).  Here we will be hitting our API's with lots of automation to ensure they are holding up nicely and the system in general is integrating nicely.  A lot of confusion lies at this layer as it is possible to almost carry out the end 2 end tests which we will talk about next, however we would be doing this in a _headless_ manner, e.g no GUI involved.  When navigating a web application, we are essentially sending & receiving http(s) requests, at this layer we can automate scenarios without physically loading all elements and interacting with them etc.  Doing some of these tests are much faster than testing through the GUI (but notable slower than unit tests) easier to maintain & are typically less _brittle_. (**See diagram below**). 
+
+3. **End to End GUI Tests:** The third part of our pyramid is our end to end (GUI) automated tests, these are typically composed of selenium tests, physically opening up the browser, navigating & interacting with the AUT (Application Under Test).  These tests are **expensive** and you really want to only automated what you have too here for good coverage, they are prone to being more brittle and require a lot more maintainence, bugs found here require more effort on diagnoses and figuring out what exactly is wrong, that said they are very important.  Typically you want to execute end to end tests here, think of common user workflows through the system and automate those, having an automated test to "login" and verify that the user has logged in is not really a good idea.  Instead consider full work flows, such as:
+
+Customer logs in > Customer navigates to the shop > Customer adds _n_ products > Customer checks out > Customer pays > Customer receives invoice.
+
+4. **Manual: Scripted/Exploratory:** The final piece of the puzzle, once all the previous layers of tests have executed and passed, it is then time to conduct some manual testing, in the form of exploratory (best to record this tho!) or executed manual test cases.
+
+So, heres a pretty diagram to outline the concept of the testing pyramid
+
+![Automation Pyramid]({{site.baseurl}}/https://knowledgetester.files.wordpress.com/2015/12/agiletesting_automationpyramid.png?w=479&h=270)
+
+After reading the above and reviewing the diagram, the next question is to ask yourself is: Does your team/project/product implement a similar strategy? if the answer is **Yes** then brilliant, chances are your software is stable and maintainable.  If the answer is **No** the chances are you are going to fall under two sub categories and are falling fowl to the ice cream anti pattern or even worse, you have no automation strategy at all.  Below is a diagram of the ice cream cone effect, after looking at it you can see quite simply where the name comes from:
+
+![Ice Cream Cone Effect]({{site.baseurl}}/http://i.imgur.com/vybOi1x.jpg)
+
+
+
+-**The Ice Cream Cone:** You have a very heavy reliance on the manual testing effort, your end to end functional tests are in a critical mass and as you enter the integration and unit stages your tests get progressively lesser.  This is an extremely expensive system, the instant feedback is well, not so instant as your automation suite packed with functional GUI tests takes a stone age to execute in comparison, the bugs you do find take much longer to diagnose and most importantly how are you going to **confidently** make changes without very many unit or integration tests?  If you are releasing often (which you will do in agile) you will severely struggle and your manual testers will be swamped, estimations will be extremely long in order to test existing functionality.
+
+-**None at all:** _Run?_ this is a disaster and in theory you are just winging it.  You will likely end up with a fair amount of production defects, big changes will become a nightmare to manage, maintain and deploy.  Changing things in the code becomes a complete gamble and your company likely adopts a "It's ok QA will spot it" attitude when in theory the system in place is making that unfair and highly unlikely.  If you are in this situation you should strongly consider sitting down collectively and thinking about how you can start correcting it, you most certainly **cannot** make maintainable software with a quick turn around time in this manner, regardless of what anyone says, well efficiently atleast!
+
+
+
+
+
+
+
