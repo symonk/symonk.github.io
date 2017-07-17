@@ -4,7 +4,7 @@ title: Selenium Cheat Sheet
 bigimg: /img/path.jpg
 published: true
 ---
-A brief outlook at selenium, what we can do with it, how we can do those things.  Super handy for upcoming job interviews or just getting a quick refresher!
+A brief outlook at selenium, what we can do with it, how we can do those things.  Super handy for a quick refresher!
 
 Wait.......Wait................So, Waits then?
 **Implicit Waits:** Implicit waiting in selenium is when we set a particular timer in which we will look for elements, the implicit wait will live with the life of our driver, in order to set the implicit wait:
@@ -250,19 +250,3 @@ alert.accept();
 alert.getText();
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
