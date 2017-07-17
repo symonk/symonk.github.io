@@ -15,6 +15,7 @@ If you are working in an agile software development team (a good chunk of us at 
 
 Customer logs in > Customer navigates to the shop > Customer adds _n_ products > Customer checks out > Customer pays > Customer receives invoice.
 
+
 4. **Manual: Scripted/Exploratory:** The final piece of the puzzle, once all the previous layers of tests have executed and passed, it is then time to conduct some manual testing, in the form of exploratory (best to record this tho!) or executed manual test cases.
 
 So, heres a pretty diagram to outline the concept of the testing pyramid
