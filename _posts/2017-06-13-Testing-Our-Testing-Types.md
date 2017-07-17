@@ -144,7 +144,8 @@ UX is becoming big business and will grow as time goes on. Usability testing is 
 **System Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
 
-System Testing is a blackbox technique which is used to evaluate the full and complete system under test against the requirements initially specified. The System is tested from an end-to-end perspective. To break this down into an example, consider a car manufacturing plant. Hundreds of parts are created, when a part is attached to another part, this is our integration testing. Once all parts have been combined we are still at the integration stage up until the last part, now what? we are done? no! we need to verify the car as a whole is suitable (meets requirements etc). The car is simply not built and upon the final piece attached shipped out to the customer, same applies in software testing.
+System Testing is where we as testers spend a lot of time, here we are evaluating the full and complete system under test against the requirements.  The system is tested from both functional and non functional aspects, under system testing we can carry out Usability, Accessibility, Security, Performance & other non functional tests, as well as functional scripted or exploratory testing.  Consider the scenario of building a car, once all parts have been combined together and tested at an integration level, are we finished? no! we need to verify the car as a whole is suitable (meets the requirements etc).  The car is simply not built and upon the final piece attached shipped out to the customer, same applies in software.
+
 
 **End to End Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
