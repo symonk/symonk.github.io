@@ -156,11 +156,10 @@ For example, a simplified end-to-end testing of an email application might invol
 
 - Logging in to the application
 - Accessing the inbox
-- Opening and closing the mailbox
-- Composing, forwarding or replying to email
+- Composing a new message to a contact
+- Sending the message
 - Checking the sent items
-- Logging out of the application
-- Performance Testing
+- Viewing your recently sent message
 
 **Performance Testing**
 {: style="color:black; font-size: 100%; text-align: center;"}
