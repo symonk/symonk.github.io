@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: 2017-07-17-Software-Testing-And-The-Ice-Cream-Cone-Anti-Pattern
+title: Software-Testing-And-The-Ice-Cream-Cone-Anti-Pattern
 ---
 ## Anti-Pattern: Software Automation Ice Cream Cone
 
