@@ -13,6 +13,8 @@ If you are working in an agile software development team (a good chunk of us at 
 
 3. **End to End GUI Tests:** The third part of our pyramid is our end to end (GUI) automated tests, these are typically composed of selenium tests, physically opening up the browser, navigating & interacting with the AUT (Application Under Test).  These tests are **expensive** and you really want to only automated what you have too here for good coverage, they are prone to being more brittle and require a lot more maintainence, bugs found here require more effort on diagnoses and figuring out what exactly is wrong, that said they are very important.  Typically you want to execute end to end tests here, think of common user workflows through the system and automate those, having an automated test to "login" and verify that the user has logged in is not really a good idea.  Instead consider full work flows, such as:
 
+Customer logs in > Customer navigates to the shop > Customer adds _n_ products > Customer checks out > Customer pays > Customer receives invoice.
+
 4. **Manual: Scripted/Exploratory:** The final piece of the puzzle, once all the previous layers of tests have executed and passed, it is then time to conduct some manual testing, in the form of exploratory (best to record this tho!) or executed manual test cases.
 
 So, heres a pretty diagram to outline the concept of the testing pyramid
