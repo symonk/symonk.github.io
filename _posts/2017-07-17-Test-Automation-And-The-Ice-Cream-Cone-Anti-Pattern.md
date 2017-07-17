@@ -3,7 +3,7 @@ layout: post
 published: true
 title: Test Automation & The Ice-Cream Cone Anti-Pattern
 ---
-A brief article on the Anti-Pattern: Software Automation Ice Cream Cone, discussing the benefits & implications of not following a similar strategy.
+A brief article on the Anti-Pattern: Software Automation Ice Cream Cone, discussing the benefits and implications of not adopting a similar strategy.
 
 If you are working in an agile software development team (a good chunk of us at this point) then you have possibly came across the software testing pyramid.  What is it?  It's a relatively simple concept which outlines where you should focus when building out your automation efforts.  Figures are thrown about loosely here, it is _advised_ to aim for a 70/20/10 split, but breaking away from that won't hurt, operating on ~60/25/15 won't bankrupt your company, don't worry.  Don't get caught up on the figures when adhering to the testing pyramid, make sure the tests you are adding are worthwhile and not just for the sake of it, **ROI** in mind is key.  There are typically 4 stages in the testing pyramid: Unit, Integration, GUI, Manual(Scripted/Exploratory).  If you take anything away from this article, just remember its pretty bad and unbeleivably common to flip the pyramid upside down or have simply none at all.
 
