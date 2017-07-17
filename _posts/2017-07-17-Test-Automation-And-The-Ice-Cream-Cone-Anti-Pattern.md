@@ -20,7 +20,7 @@ Customer logs in > Customer navigates to the shop > Customer adds _n_ products >
 
 So, heres a pretty diagram to outline the concept of the testing pyramid
 
-![Automation Pyramid](https://knowledgetester.files.wordpress.com/2015/12/agiletesting_automationpyramid.png?w=479&h=270)
+![Automation Pyramid](https://smartbear.com/SmartBear/media/images/Resources/articles/content/test-automation-pyramid.png)
 
 After reading the above and reviewing the diagram, the next question is to ask yourself is: Does your team/project/product implement a similar strategy? if the answer is **Yes** then brilliant, chances are your software is stable and maintainable.  If the answer is **No** the chances are you are going to fall under two sub categories and are falling fowl to the ice cream anti pattern or even worse, you have no automation strategy at all.  Below is a diagram of the ice cream cone effect, after looking at it you can see quite simply where the name comes from:
 
