@@ -124,6 +124,7 @@ The main benefits of Agile are: The testing is happening much quicker in this sy
 **What types of testing would you perform on web applications?**
 Web applications will undergo a range of different types of testing, non functional aspects like testing the application for security, performance, usability and accessibility.  Web applications will also have unit & integration tests automatically executed.  Functional testing types are also performanced, such as Regression, Smoke/Sanity, System & End2End testing are utilised.
 
+**What is the Software Testing Life Cycle**
 
 
 
