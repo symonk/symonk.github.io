@@ -144,5 +144,14 @@ Test Execution: Executing the test cases, logging any defects and following them
 
 Test Cycle Closure: The testing team will meet and create a retrospective to help them improve in future, thinking of new processes that can or should be implemented and refining the existing ones. Here a test cycle report is generated, containing information about the number of defects discovered and their priority/severity, cost and test time etc, aswell as some other test metrics documentation.
 
+**Stubs Vs. Drivers?**
+Stubs and Drivers are names given for things we create to aid us with integration testing.  A Test Driver is something which
 
+**Exploratory testing & its benefits?**
+Exploratory testing is when we veer off scripted tests, it is a 100% manual effort and is becoming more and more popular as auaomtion becomes the norm.  The advantages of exploratory testing are: the tester can express 100% curiosity, finding unique and hard to come by bugs.  Not following a script allows a wide approach, so areas of the system lacking test case scripts can be found.  Exploratory testing is key with iterative design in order to keep up with the pace of work.  Exploratory testing allows for rapid feedback and it allows newer tests to get upto speed on the product much faster than traditional testing.
 
+**ab?**
+wewewe
+
+**Difference in QA and Software Testing?**
+Quality Assurance engrosses all aspects of the software delivery process, ensuring Quality in all processes used to actually create the software, Software testing is the act of testing the software to ensure it meets the requirements.
