@@ -121,13 +121,28 @@ Agile is a software development life cycle, typically consisting of a scrum or k
 
 The main benefits of Agile are: The testing is happening much quicker in this system, unlike the older waterfall model testing coming quite late in the overall process where it is too late to back track, this is a much faster response and cost effective system.  Customers are involved heavily in the process of defining the requirements and coupled with mid or end of sprint demos they get a good feel for what we are building, rather than keeping them in the dark and then showing them something they potentially won't like.  Internal work force has more responsibilities within the team, members take on tasks outside of the norm occassionally and develop themselves technically.  Company is building high performing teams that can be moved around on various projects leader creating a more effecient work force.  Less risk in building the wrong software and more emphasis on building the software **right**.
 
+The agile manifesto is as follows:
+
+Individuals and interactions over processes and tools
+Working software over comprehensive documentation
+Customer collaboration over contract negotiation
+Responding to change over following a plan
+
 **What types of testing would you perform on web applications?**
 Web applications will undergo a range of different types of testing, non functional aspects like testing the application for security, performance, usability and accessibility.  Web applications will also have unit & integration tests automatically executed.  Functional testing types are also performanced, such as Regression, Smoke/Sanity, System & End2End testing are utilised.
 
 **What is the Software Testing Life Cycle**
 
+Test Requirement Analysis: Look at the requirements, work out if there is any test automation feasibility here, which types of testing are also feasible. Deliverables: A Requirements Traceability Matrix (RTM).
 
+Test Planning: Consider various factors of the greater project, like risks, scope, entry/exit criteria etc and contribute to estimations. Deliverables: An estimation document, A test plan or test strategy document.
 
+Test Creation: Creating the test cases, mapping them effectively in the RTM. Reviewing and tweaking the test cases with peers. Creating test data and automation scripts where applicable. Deliverables: Updated RTM.
+Test Environment Setup: Preparing the test environment in anticipation for the first build, tweaking any configurations such as xml configs, IIS configurations etc. Creating a database instance and having it ready for the build, its likely we have an existing version already, maybe we added a new database and need a connection string etc.
+
+Test Execution: Executing the test cases, logging any defects and following them through to closure, re-testing any fix implementations. RTM is updated and completed during this phase, test case status is updated with progress.
+
+Test Cycle Closure: The testing team will meet and create a retrospective to help them improve in future, thinking of new processes that can or should be implemented and refining the existing ones. Here a test cycle report is generated, containing information about the number of defects discovered and their priority/severity, cost and test time etc, aswell as some other test metrics documentation.
 
 
 
