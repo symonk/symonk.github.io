@@ -150,8 +150,23 @@ Stubs and Drivers are names given for things we create to aid us with integratio
 **Exploratory testing & its benefits?**
 Exploratory testing is when we veer off scripted tests, it is a 100% manual effort and is becoming more and more popular as auaomtion becomes the norm.  The advantages of exploratory testing are: the tester can express 100% curiosity, finding unique and hard to come by bugs.  Not following a script allows a wide approach, so areas of the system lacking test case scripts can be found.  Exploratory testing is key with iterative design in order to keep up with the pace of work.  Exploratory testing allows for rapid feedback and it allows newer tests to get upto speed on the product much faster than traditional testing.
 
-**ab?**
+**Integration: Big Bang vs. Top down vs. Bottom up?**
 wewewe
 
 **Difference in QA and Software Testing?**
 Quality Assurance engrosses all aspects of the software delivery process, ensuring Quality in all processes used to actually create the software, Software testing is the act of testing the software to ensure it meets the requirements.
+
+**An Automation Framework, general structure?**
+When developing an automation framework I think its important to create the "front end" of it, very easy to use, utilising something like cucumber can aid with this massively, non technical people can write english-tests and they can be mapped to steps to make the framework as a whole very user friendly.
+
+General Structure of the automation framework would be as follows:
+Cucumber .feature files where the scenarios & features are written in BDD english
+StepDefinition classes which are used (and organised) to map the feature file english to executable code, taking that technical aspect away from the framework end users.
+Unit tests for the framework itself, we are writing code, code coverage too etc
+
+
+
+
+
+
+
