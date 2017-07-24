@@ -33,7 +33,7 @@ Regression testing is more widespread and is used to ensure that older stable ar
 Usually a lot of automation is targetted towards regression testing.
 
 **The Bug/Defect life cycle**
-Typically when defects are discovered they will recorded in the defect tracking software and start their life as state: New.  From New they can become four different states, Duplicate; Rejected; In-progress; On-Hold.  Duplicate (if another related defect already exists); Rejected (if the developer/PO deem it not a defect); On-Hold (if its out of scope but we may look at it later); In-Progress (if it has been accepted and work to correct is underway);
+Typically when defects are discovered they will be recorded in the defect tracking software and start their life as state: New.  From New they can become four different states, Duplicate; Rejected; In-progress; On-Hold.  Duplicate (if another related defect already exists); Rejected (if the developer/PO deem it not a defect); On-Hold (if its out of scope but we may look at it later); In-Progress (if it has been accepted and work to correct is underway);
 
 From In-Progress it can then (once committed) be marked as Committed, once a build has been deployed to the testing environment, the defect can then be marked as Ready-For-Testing.  From this point the tester can retest the defect/impacted areas and deem the defect to be either: Done/Closed (when it has passed QA) or Re-Opened (If the implemented fix, does not fix the issue).
 
@@ -59,7 +59,7 @@ QA Engineers face a range of issues, most jobs do.  Some of the main problems I 
 
 **Lackluster Tools:** Company skimps or refuses to invest in adaquate tooling, this could be test case software, hardware, automation tools, time tracking tools etc.  In order to overcome this problem you should create a business case for the tools in question, analysing your need for them and present it to your line manager.
 
-**Lack Of Training:** Work requires learning new skills or the team does not have all bases covered from a skill set perspective, for example how to test APIs.  To overcome this problem you should speak to your line manager alerting them about the defeciency of skills within the team for that area and present some recommendations for training which could help the team, import to document the learning for newer starts later.  
+**Lack Of Training:** Work requires learning new skills or the team does not have all bases covered from a skill set perspective, for example how to test APIs.  To overcome this problem you should speak to your line manager alerting them about the defeciency of skills within the team for that area and present some recommendations for training which could help the team, important to document the learning for newer starts later, have an interest to self teach your self, "I can't" is a lazy persons excuse.
 
 **Application instability:** The application is very unstable, there are a lot of defects and progressing is taking much slower than expected, this could be due to inexperienced developers working on the project, unmaintainable code starting to come back and haunt us.
 
@@ -107,7 +107,7 @@ Beta testing is when the organisation may use a public or private group of peopl
 A Bug triage is part of the agile process and is used to assess the current defect list, here we evaluate each individual defect firstly for its current state, should something be put on hold for another release? is the severity & priority of the defects accurate.  Is the defect assigned to the appropriate person? we can modify that during the bug triage meeting. 
 
 **What is a Traceability Matrix?**
-A Traceability Matrix is used to demonstrate the satisfaction of requirements throughout the testing process.  Requires vs. test cases so to speak, requirements are listed across one axis with test cases on the other, where the test case and the requirement meet on the grid and that case can satisfy to requirement or part of it, it is marked with a **x**.  This way we can easily identify if we are doing work outside of the requirements and possibly out of sceope, but also say with confidence that the requirements have been met and thoroughly tested.
+A Traceability Matrix is used to demonstrate the satisfaction of requirements throughout the testing process.  Requirements vs. test cases so to speak, requirements are listed across one axis with test cases on the other, where the test case and the requirement meet on the grid and that case can satisfy to requirement or part of it, it is marked with a **x**.  This way we can easily identify if we are doing work outside of the requirements and possibly out of scope, but also say with confidence that the requirements have been met and thoroughly tested.
 
 **What makes a good test case?**
 A test case should be easily executable for someone who is new to the system, write them to include all necessary information for maintainability later.  Test case should include any assumptions or prerequisites.  Each step should make logical sense, with clear consise actions accompanied with assertable expected criteria.  Perhaps using a BDD approach @Given, @When, @Then.
