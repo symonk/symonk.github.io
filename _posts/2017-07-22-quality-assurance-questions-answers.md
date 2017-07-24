@@ -138,6 +138,7 @@ Test Requirement Analysis: Look at the requirements, work out if there is any te
 Test Planning: Consider various factors of the greater project, like risks, scope, entry/exit criteria etc and contribute to estimations. Deliverables: An estimation document, A test plan or test strategy document.
 
 Test Creation: Creating the test cases, mapping them effectively in the RTM. Reviewing and tweaking the test cases with peers. Creating test data and automation scripts where applicable. Deliverables: Updated RTM.
+
 Test Environment Setup: Preparing the test environment in anticipation for the first build, tweaking any configurations such as xml configs, IIS configurations etc. Creating a database instance and having it ready for the build, its likely we have an existing version already, maybe we added a new database and need a connection string etc.
 
 Test Execution: Executing the test cases, logging any defects and following them through to closure, re-testing any fix implementations. RTM is updated and completed during this phase, test case status is updated with progress.
