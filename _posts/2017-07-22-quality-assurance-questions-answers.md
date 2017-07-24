@@ -163,6 +163,9 @@ General Structure of the automation framework would be as follows:
 Cucumber .feature files where the scenarios & features are written in BDD english
 StepDefinition classes which are used (and organised) to map the feature file english to executable code, taking that technical aspect away from the framework end users.
 Unit tests for the framework itself, we are writing code, code coverage too etc
+SupportFactory/Method classes to aid in reusable functionality, things like JDBC calls to the database to retrieve settings values etc
+Reporting capabilities, deploying to tomcat to show stakeholders & developers results and bugs as fast as possible in a structured manner.
+
 
 
 
