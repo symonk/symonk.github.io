@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: The Hypertext Transfer Protocol
 ---
 ## Hypertext Transfer Protocol (HTTP)
