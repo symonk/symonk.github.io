@@ -192,11 +192,11 @@ Cookies are essentially a key value pair where the value is a string without a s
 
 The Set-Cookie Response header can contain more than just the cookies name/value, it can also include a number of different attributes which can be used.
 
-- Set a date the cookie valid until by specifying the **expires** attribute, when not set explicitly the - - cookie expiration will only live in the current browser session.
+- Set a date the cookie is valid until by specifying the **expires** attribute, when not set explicitly the cookie expiration will only live in the current browser session.
 
 - Set the cookie only to be transmitted under HTTPS conditions by specifying the **secure** attribute
 
-- Prevent the cookie being access via client side javascript (document.cookie; for example) using the **HttpOnly** attribute.
+- Prevent the cookie being accessed via client side javascript (document.cookie; for example) using the **HttpOnly** attribute.
 
 - Specify which domain the cookie is valid for using the **domain** attribute (strictly limited to the same or parent of the domain in which the cookie is received).
 
@@ -238,7 +238,7 @@ An overview of some of the most popular status codes are:
 
 - **405 Method Not Allowed:** Unsupported HTTP method type, use HTTP Options to see the list available.
 
-- **500 Internal Server:** Error indicates that the server encountered an error fulfi lling the request. This normally occurs when you have submitted unexpected input that caused an unhandled error somewhere within the application’s processing. You should closely review the full contents of the server’s response for any details indicating the nature of the error.
+- **500 Internal Server:** Error indicates that the server encountered an error fulfilling the request. This normally occurs when you have submitted unexpected input that caused an unhandled error somewhere within the application’s processing. You should closely review the full contents of the server’s response for any details indicating the nature of the error.
 
 - **503 Service Unavailable:** Normally indicates that, although the web server itself is functioning and can respond to requests, the application accessed via the server is not responding. You should verify whether this is the result of any action you have performed.
 
