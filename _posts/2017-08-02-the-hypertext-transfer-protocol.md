@@ -140,6 +140,9 @@ I briefly touched on headers at the start of this article, HTTP supports a wide 
 
 **Content-Type:**  Specifies the type of content contained in the message body, such as application/json for Javascript Object Notation.
 
+
+---
+
 ## HTTP Headers In Detail - Request Headers
 
 **Accept**: We tell the server which type of content we (the client) are happy to accept, be it image types, HTML or JSON etc.
