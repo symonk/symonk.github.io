@@ -79,7 +79,7 @@ Just like with HTTP Requests, HTTP Responses can contain a number of headers, so
 ## HTTP METHODS (well, some of them)
 HTTP has a number of different of methods available and each serves an individual purpose. When dealing with web applications for example the most common methods you will encounter are HTTP GET and HTTP POST but a good overview for most methods is outlined below:
 
-**HTTP POST:** This method is designed to perform actions, create resources, change state on the server. Parameters can be passed in the query string of the request as well as the request message body. Consider the example when a POST request is sent on your web application, pressing the back button would not re-issue the request (like it would for a HTTP GET request). POST is slightly less susceptible to CSRF (Cross Site Request Forgery) but you can read more about that on my other article.
+**HTTP POST:** This method is designed to perform actions, create resources, change state on the server. Parameters can be passed in the query string of the request as well as the request message body. Consider the example when a POST request is sent on your web application, pressing the back button would not re-issue the request (like it would for a HTTP GET request), a popup typically would appear to the user warning them. POST is slightly less susceptible to CSRF (Cross Site Request Forgery) but you can read more about that on my other article.
 
 **HTTP GET:** Relatively basic, designed to get resources from the server, consider when you are loading a web page, what you are actually doing is sending a GET request to the web server telling it, retrieve me the HTML for this page and display it on my browser. GET should never modify state on the server or create resources, why?
 
