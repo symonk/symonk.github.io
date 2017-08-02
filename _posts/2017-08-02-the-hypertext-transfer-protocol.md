@@ -20,7 +20,7 @@ HTTP Requests & Responses contain a number of headers seperated on new lines, fo
 
 ![standardhttprequest.JPG]({{site.baseurl}}/img/standardhttprequest.JPG)
 
-Lets begin with you, the client. As a client you send HTTP Requests. A Request typically first line consists of three main items.
+Lets begin with you, the client. As a client you send HTTP Requests. A Request first line consists of three main items.
 
 - **The HTTP Method:** In the image above we are sending a HTTP GET whose function is to retrieve a resource from the web server. GET requests do not have a message body, so no further data follows the blank line after the message headers.
 
