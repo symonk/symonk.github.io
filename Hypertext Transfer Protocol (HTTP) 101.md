@@ -183,8 +183,30 @@ Every single HTTP response must contain a HTTP response code and these are typic
 
 An overview of some of the most popular status codes are:
 
+- **100 Continue:** Is sent in some circumstances when a client submits a request containing a body. The response indicates that the request headers were received and that the client should continue sending the body. The server returns a second response when the request has been completed.
 
+- **200 OK:** Indicates that the request was successful and that the response body contains the result of the request.
 
+- **201 Created:** Returned in response to a PUT request to indicate that the request was successful.
+
+- **301 Moved Permanently:** Redirects the browser permanently to a different URL, which is specified in the Location header. The client should use the new URL in the future rather than the original.
+
+- **400 Bad Request:** Indicates that the client submitted an invalid HTTP request. You will probably encounter this when you have modified a request in certain invalid ways, such as by placing a space character into the URL.
+
+- **401 Unauthorized:** Indicates that the server requires HTTP authentication before the request will be granted. The WWW-Authenticate header contains details on the type(s) of authentication supported.
+
+- **403 Forbidden:** Indicates that no one is allowed to access the requested resource, regardless of authentication.
+- **404 Not Found:** Resource cannot be found.
+
+- **405 Method Not Allowed:** Unsupported HTTP method type, use HTTP Options to see the list available.
+
+- **500 Internal Server:** Error indicates that the server encountered an error fulfi lling the request. This normally occurs when you have submitted unexpected input that caused an unhandled error somewhere within the application’s processing. You should closely review the full contents of the server’s response for any details indicating the nature of the error.
+
+- **503 Service Unavailable:** Normally indicates that, although the web server itself is functioning and can respond to requests, the application accessed via the server is not responding. You should verify whether this is the result of any action you have performed.
+
+---
+
+## HTTP( S) & HTTP Authentication
 
 
 
