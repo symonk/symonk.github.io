@@ -206,7 +206,12 @@ An overview of some of the most popular status codes are:
 
 ---
 
-## HTTP( S) & HTTP Authentication
+## HTTP( S) & SSL/TLS
+HTTP itself uses plain old TCP for transportation, this is uncencrypted and therefore can easily be intercepted by an attacker who is sniffing on the network, for example logging in across HTTP would likely display your credentials in plaintext in the HTTP Request which could be intercepted easily by an attacker and read to steal your credentials.  HTTPS on the other hand is the same application layer protocol as HTTP but it is tunneled across the Secure Sockets Layer (**SSL**).  This protects the privacy and integrity of data passing over the network (still exploitable with certain attacks) massively reducing the threat from interception attacks.  HTTP requests and responses operate in the exact same fashion across both, SSL or not.  **note: SSL is the predecessor to TLS**.
+
+
+
+
 
 
 
