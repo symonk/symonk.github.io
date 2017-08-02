@@ -62,6 +62,126 @@ Just like with HTTP Requests, HTTP Responses can contain a number of headers, so
 ## HTTP METHODS (well, some of them)
 HTTP has a number of different of methods available and each serves an individual purpose. When dealing with web applications for example the most common methods you will encounter are HTTP GET and HTTP POST but a good overview for most methods is outlined below:
 
+**HTTP POST:** This method is designed to perform actions, create resources, change state on the server. Parameters can be passed in the query string of the request as well as the request message body. Consider the example when a POST request is sent on your web application, pressing the back button would not re-issue the request (like it would for a HTTP GET request). POST is slightly less susceptible to CSRF (Cross Site Request Forgery) but you can read more about that on my other article.
+
+**HTTP GET:** Relatively basic, designed to get resources from the server, consider when you are loading a web page, what you are actually doing is sending a GET request to the web server telling it, retrieve me the HTML for this page and display it on my browser. GET should never modify state on the server or create resources, why?
+
+- It is much weaker vs CSRF based attacks
+
+- Imagine a HTTP GET in your API that creates or deletes resources, google crawler could cause havoc on your server, running a pentesting tool could also absolutely ruin your server & data.
+
+- GET should be safe & idempotent, it is also a violation of the HTTP standards. By idempotent we mean it can be cached and retried with zero risk.
+
+**HTTP HEAD:** Same as a HTTP GET request except we tell the server not to give us back the message body, this can be used to check if a particular resource exists before making an attempt to retrieve with a GET.
+
+**HTTP TRACE:** This is used for debugging and essentially loops back the HTTP Request in the response.
+
+**HTTP OPTIONS:** Asking the server to give us back a list of supported HTTP methods for a particular resource, really helpful if you don't want to refer to API documentation etc. The HTTP Response will include an ALLOW header which will list each supported method, comma seperated.
+
+**HTTP PUT:** Used to typically update existing resources on the server, we may POST to add a new resource on the server, however if we wanted to change a particular attribute of a resource we could HTTP PUT.
+
+disclaimer: Other methods do exist!
+
+---
+
+### URL Deciphering
+URL stands for Uniform Resource Locator and it is a unique identifier for a resource on the server which can be retrieved, URL format is usually structured as follows:
+
+protocol://hostname[:port]/[path/]file[?param1=value&param2=value2]
+
+**protocol**: http://
+
+**hostname**: www.mywebsite.com
+
+**port**: :82
+
+**path**: /api/getPersonDetails
+
+**params**: ?personID=100
+
+Collectively the above example, gives us our URL which looks like so: http://www.simonkay.com:82/api/getpersonDetails?personID=100
+
+---
+
+## HTTP Headers In Detail - General Headers
+
+I briefly touched on headers at the start of this article, HTTP supports a wide range of headers and some of them are universal in that they can be passed as both request & response headers, some are available only to requests and likewise some to responses.
+
+**Connection:**  Tells the receiver end of the communication whether it should close the TCP connection after the HTTP transmission has completed or keep it open for further messages.
+
+**Content-Encoding:**  Specify what type of encoding is being used for the entity/message body. This header is advisable as it can decrease payload size with the compression of the media type, however things like JPEG files are already compressed.
+
+**Content Length:** The length of the message body in bytes. (Special scenario: in response to a HTTP Head request, this will return the length of the body as if it was a GET request).
+
+**Content-Type:**  Specifies the type of content contained in the message body, such as application/json for Javascript Object Notation.
+
+## HTTP Headers In Detail - Request Headers
+
+**Accept**: We tell the server which type of content we (the client) are happy to accept, be it image types, HTML or JSON etc.
+
+**Accept-Encoding:** Tells the server what kinds of content encoding the client is willing to accept.
+
+**Authorization:**  Submits credentials to the server for one of the built-in HTTP authentication types, such as BASIC, NTLM & DIGEST (more on this later!).
+
+**Cookie:** Submits cookies to the server that the server previously issued.
+
+**Host:** Specifies the host name that appeared in the full URL being requested. (covered this one already).
+
+**Origin:** Used in cross-domain Ajax requests to indicate the domain from which the request originated.
+
+We've already covered user-agent & referer previously so I won't detail those two again, but you can read more on them above.
+
+---
+
+## HTTP Headers In Detail - Response Headers
+**Access-Control-Allow-Origin:**  Indicates whether the resource can be retrieved via cross-domain Ajax requests.
+
+**Cache-Control:** Passes caching directives to the browser (for example, no-cache, no-store, no transform & max-age etc (lots more available here).
+
+**Expires:**  Sets how long the message body of the response is considered valid, cached version of this will be accessible until the expiration date/time passes, then the response will be considered stale.
+
+**Location:** Often coupled with a status of 3xx to perform a redirect, the location header specifies a destination host in which to redirect the browser.
+
+**Set-Cookie:** This issues the browser a further cookie; this is submitted back in the Cookie header of subsequent requests to this server.
+
+**Pragma:** This is used for caching purposely and typically tells the browser not to store the response in its cache. The Expires header indicates that the response content expired in the past and therefore should not be cached. These instructions are frequently issued when dynamic content is being returned to ensure that browsers obtain a fresh version of this content on subsequent occasions.
+
+**Server:** Provides information about the web server software being used.
+
+**X-Frame-Options:** Used to control if the current response is allowed to be loaded in an IFRAME, this is useful in the prevention of click jacking. Try embed google into an IFRAME and you will see that it simply does not load/render the HTML when you view it locally.
+
+---
+
+## Cookies nomnom!
+Cookies are a crucial part of HTTP and are used in most web applications today. They provide a means of sending data to the client which is stored on the client side and attached to all subsequent requests. A server may return a Set-Cookie header in the response, Set-Cookie: yourname=simon. Now if i communicate with the server later, it will attach a header to my request like so: Cookie: yourname=simon.
+
+Cookies are essentially a key value pair where the value is a string without a space, multiple cookies can be sent as a response from the server by sending multiple Set-Cookie headers, however on subsequent requests by the client all cookies will be set on the cookie: header, seperated by a comma.
+
+The Set-Cookie Response header can contain more than just the cookies name/value, it can also include a number of different attributes which can be used.
+
+- Set a date the cookie valid until by specifying the **expires** attribute, when not set explicitly the - - cookie expiration will only live in the current browser session.
+
+- Set the cookie only to be transmitted under HTTPS conditions by specifying the **secure** attribute
+
+- Prevent the cookie being access via client side javascript (document.cookie; for example) using the **HttpOnly** attribute.
+
+- Specify which domain the cookie is valid for using the **domain** attribute (strictly limited to the same or parent of the domain in which the cookie is received).
+
+- Specify the URL path which the cookie is valid for using the **path** attribute.
+
+---
+
+## HTTP Status Codes
+
+Every single HTTP response must contain a HTTP response code and these are typically grouped into 5 categories ranging from 1xx - 5xx.
+
+- **1xx** - Information status codes
+- **2xx** - Successful Request status codes
+- **3xx** - Client Redirection status codes
+- **4xx** - Erroneous Request status codes
+- **5xx** - Server Error status codes
+
+An overview of some of the most popular status codes are:
 
 
 
