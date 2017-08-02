@@ -4,7 +4,11 @@ Have you ever spotted the http:// or https:// prefix in the address bar of your 
 
 The system used is relatively simple, HTTP operates on a message-based model in which the client (you) typically sends a Request to the server, which in turn handles the request and provides the client back a Response. The protocol is connection-less and by that I mean, your browser initiates a HTTP request and after a request is made, the client disconnects from the server and waits for a response. The server processes the request and re-establishes the connection with the client to send a response back. Although HTTP uses the stateful TCP protocol as its transport mechanism, each exchange of request and response is an autonomous transaction and may use a different TCP connection.
 
+
+
 ---
+
+
 
 ## HTTP Requests
 HTTP Requests & Responses contain a number of headers seperated on new lines, followed by a white line then an optional message body.  See below for an example HTTP Request:
@@ -27,7 +31,11 @@ As previously mentioned, there can be multiple headers associated with a request
 
 - **Host Header:** As previously mentioned this is mandatory when running HTTP 1.1 and this header specifies the host name that appeared in the full URL being accessed.
 
+
+
 ---
+
+
 
 ## HTTP Responses
 
@@ -56,7 +64,11 @@ Just like with HTTP Requests, HTTP Responses can contain a number of headers, so
 - **Content-Type Header:** Format of the message body in the response, e.g application/json or HTML etc.
 
 
+
+
 ---
+
+
 
 
 ## HTTP METHODS (well, some of them)
@@ -82,7 +94,11 @@ HTTP has a number of different of methods available and each serves an individua
 
 disclaimer: Other methods do exist!
 
+
+
 ---
+
+
 
 ### URL Deciphering
 URL stands for Uniform Resource Locator and it is a unique identifier for a resource on the server which can be retrieved, URL format is usually structured as follows:
@@ -101,7 +117,11 @@ protocol://hostname[:port]/[path/]file[?param1=value&param2=value2]
 
 Collectively the above example, gives us our URL which looks like so: http://www.simonkay.com:82/api/getpersonDetails?personID=100
 
+
+
 ---
+
+
 
 ## HTTP Headers In Detail - General Headers
 
@@ -131,7 +151,11 @@ I briefly touched on headers at the start of this article, HTTP supports a wide 
 
 We've already covered user-agent & referer previously so I won't detail those two again, but you can read more on them above.
 
+
+
 ---
+
+
 
 ## HTTP Headers In Detail - Response Headers
 **Access-Control-Allow-Origin:**  Indicates whether the resource can be retrieved via cross-domain Ajax requests.
@@ -150,7 +174,11 @@ We've already covered user-agent & referer previously so I won't detail those tw
 
 **X-Frame-Options:** Used to control if the current response is allowed to be loaded in an IFRAME, this is useful in the prevention of click jacking. Try embed google into an IFRAME and you will see that it simply does not load/render the HTML when you view it locally.
 
+
+
 ---
+
+
 
 ## Cookies nomnom!
 Cookies are a crucial part of HTTP and are used in most web applications today. They provide a means of sending data to the client which is stored on the client side and attached to all subsequent requests. A server may return a Set-Cookie header in the response, Set-Cookie: yourname=simon. Now if i communicate with the server later, it will attach a header to my request like so: Cookie: yourname=simon.
@@ -169,7 +197,11 @@ The Set-Cookie Response header can contain more than just the cookies name/value
 
 - Specify the URL path which the cookie is valid for using the **path** attribute.
 
+
+
 ---
+
+
 
 ## HTTP Status Codes
 
@@ -196,6 +228,7 @@ An overview of some of the most popular status codes are:
 - **401 Unauthorized:** Indicates that the server requires HTTP authentication before the request will be granted. The WWW-Authenticate header contains details on the type(s) of authentication supported.
 
 - **403 Forbidden:** Indicates that no one is allowed to access the requested resource, regardless of authentication.
+
 - **404 Not Found:** Resource cannot be found.
 
 - **405 Method Not Allowed:** Unsupported HTTP method type, use HTTP Options to see the list available.
@@ -204,7 +237,11 @@ An overview of some of the most popular status codes are:
 
 - **503 Service Unavailable:** Normally indicates that, although the web server itself is functioning and can respond to requests, the application accessed via the server is not responding. You should verify whether this is the result of any action you have performed.
 
+
+
 ---
+
+
 
 ## HTTP( S) & SSL/TLS
 HTTP itself uses plain old TCP for transportation, this is uncencrypted and therefore can easily be intercepted by an attacker who is sniffing on the network, for example logging in across HTTP would likely display your credentials in plaintext in the HTTP Request which could be intercepted easily by an attacker and read to steal your credentials.  HTTPS on the other hand is the same application layer protocol as HTTP but it is tunneled across the Secure Sockets Layer (**SSL**).  This protects the privacy and integrity of data passing over the network (still exploitable with certain attacks) massively reducing the threat from interception attacks.  HTTP requests and responses operate in the exact same fashion across both, SSL or not.  **note: SSL is the predecessor to TLS**.
