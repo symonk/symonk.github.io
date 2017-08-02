@@ -62,7 +62,7 @@ Just like with HTTP Requests, HTTP Responses can contain a number of headers, so
 
 - **Set-Cookie Header:**  This issues the browser a further cookie; this is submitted back in the Cookie header of subsequent requests to this server.
 
-- **Pragma Header:** This is used for caching purposely and typically tells the browser **not** to store the response in its cache. The Expires header indicates that the response content expired in the past and therefore should not be cached. These instructions are frequently issued when dynamic content is being returned to ensure that browsers obtain a fresh version of this content on subsequent occasions.
+- **Pragma Header:** This is used for caching and typically tells the browser **not** to store the response in its cache. The Expires header indicates that the response content expired in the past and therefore should not be cached. These instructions are frequently issued when dynamic content is being returned to ensure that browsers obtain a fresh version of this content on subsequent occasions.
 
 - **Content-Length Header:** The length of the message body in the response, in bytes.
 
