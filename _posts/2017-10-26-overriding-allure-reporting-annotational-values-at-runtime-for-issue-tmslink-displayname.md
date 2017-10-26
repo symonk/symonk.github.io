@@ -110,7 +110,7 @@ Overriding the values on each iteration at runtime!  (**Put this in your @Test m
         tester.changeAnnotationValue(tl, "value", dtl.value());
 ```
 
-and last but not least, our helper method to aid us in override these values:
+and last but not least, our helper method to aid us in overriding these values:
 
 ```java
 import java.lang.annotation.Annotation;
@@ -147,11 +147,4 @@ public class tester {
 }
 ```
 
-If you encounter a similar problem, you can give me a message @ https://testersio.slack.com/messages (Register with the channel and message me @simonkay for any queries regarding this.
-
-
-
-
-
-
-
+If you encounter a similar problem, you can give me a message @ https://testersio.slack.com/messages (Register with the channel and message me @simonkay for any queries regarding this.  I also took some inspiration/samples from `baeldung`
