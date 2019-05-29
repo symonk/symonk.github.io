@@ -170,14 +170,9 @@ Like pretty much everything in python, sets support heterogeneous types, this al
 ```
 
 ### Immutability and sets
-            
-            
 
 
 
+### Operators Vs. Methods:
 
-
-
-
-
-
+**[Union]:** A combination of elements from multiple sets
